@@ -1,0 +1,936 @@
+<!doctype html>
+<html class="no-js" lang="en" data-content_root="../">
+  <head><meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <meta name="color-scheme" content="light dark"><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+<link rel="index" title="Index" href="../genindex.html" /><link rel="search" title="Search" href="../search.html" />
+
+    <!-- Generated with Sphinx 7.2.6 and Furo 2023.09.10 -->
+        <title>Statistical physics Handbook - Handbook and guide: Statistical and Solid State Physics 0.1 documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=362ab14a" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/furo.css?v=135e06be" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/furo-extensions.css?v=36a5483c" />
+    
+    
+
+
+<style>
+  body {
+    --color-code-background: #f8f8f8;
+  --color-code-foreground: black;
+  
+  }
+  @media not print {
+    body[data-theme="dark"] {
+      --color-code-background: #202020;
+  --color-code-foreground: #d0d0d0;
+  
+    }
+    @media (prefers-color-scheme: dark) {
+      body:not([data-theme="light"]) {
+        --color-code-background: #202020;
+  --color-code-foreground: #d0d0d0;
+  
+      }
+    }
+  }
+</style></head>
+  <body>
+    
+    <script>
+      document.body.dataset.theme = localStorage.getItem("theme") || "auto";
+    </script>
+    
+
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+  <symbol id="svg-toc" viewBox="0 0 24 24">
+    <title>Contents</title>
+    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024">
+      <path d="M408 442h480c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8H408c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8zm-8 204c0 4.4 3.6 8 8 8h480c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8H408c-4.4 0-8 3.6-8 8v56zm504-486H120c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zm0 632H120c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zM115.4 518.9L271.7 642c5.8 4.6 14.4.5 14.4-6.9V388.9c0-7.4-8.5-11.5-14.4-6.9L115.4 505.1a8.74 8.74 0 0 0 0 13.8z"/>
+    </svg>
+  </symbol>
+  <symbol id="svg-menu" viewBox="0 0 24 24">
+    <title>Menu</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather-menu">
+      <line x1="3" y1="12" x2="21" y2="12"></line>
+      <line x1="3" y1="6" x2="21" y2="6"></line>
+      <line x1="3" y1="18" x2="21" y2="18"></line>
+    </svg>
+  </symbol>
+  <symbol id="svg-arrow-right" viewBox="0 0 24 24">
+    <title>Expand</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather-chevron-right">
+      <polyline points="9 18 15 12 9 6"></polyline>
+    </svg>
+  </symbol>
+  <symbol id="svg-sun" viewBox="0 0 24 24">
+    <title>Light mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather-sun">
+      <circle cx="12" cy="12" r="5"></circle>
+      <line x1="12" y1="1" x2="12" y2="3"></line>
+      <line x1="12" y1="21" x2="12" y2="23"></line>
+      <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+      <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+      <line x1="1" y1="12" x2="3" y2="12"></line>
+      <line x1="21" y1="12" x2="23" y2="12"></line>
+      <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+      <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+    </svg>
+  </symbol>
+  <symbol id="svg-moon" viewBox="0 0 24 24">
+    <title>Dark mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-moon">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+      <path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z" />
+    </svg>
+  </symbol>
+  <symbol id="svg-sun-half" viewBox="0 0 24 24">
+    <title>Auto light/dark mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-shadow">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+      <circle cx="12" cy="12" r="9" />
+      <path d="M13 12h5" />
+      <path d="M13 15h4" />
+      <path d="M13 18h1" />
+      <path d="M13 9h4" />
+      <path d="M13 6h1" />
+    </svg>
+  </symbol>
+</svg>
+
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation">
+<input type="checkbox" class="sidebar-toggle" name="__toc" id="__toc">
+<label class="overlay sidebar-overlay" for="__navigation">
+  <div class="visually-hidden">Hide navigation sidebar</div>
+</label>
+<label class="overlay toc-overlay" for="__toc">
+  <div class="visually-hidden">Hide table of contents sidebar</div>
+</label>
+
+
+
+<div class="page">
+  <header class="mobile-header">
+    <div class="header-left">
+      <label class="nav-overlay-icon" for="__navigation">
+        <div class="visually-hidden">Toggle site navigation sidebar</div>
+        <i class="icon"><svg><use href="#svg-menu"></use></svg></i>
+      </label>
+    </div>
+    <div class="header-center">
+      <a href="../index.html"><div class="brand">Handbook and guide: Statistical and Solid State Physics 0.1 documentation</div></a>
+    </div>
+    <div class="header-right">
+      <div class="theme-toggle-container theme-toggle-header">
+        <button class="theme-toggle">
+          <div class="visually-hidden">Toggle Light / Dark / Auto color theme</div>
+          <svg class="theme-icon-when-auto"><use href="#svg-sun-half"></use></svg>
+          <svg class="theme-icon-when-dark"><use href="#svg-moon"></use></svg>
+          <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
+        </button>
+      </div>
+      <label class="toc-overlay-icon toc-header-icon no-toc" for="__toc">
+        <div class="visually-hidden">Toggle table of contents sidebar</div>
+        <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
+      </label>
+    </div>
+  </header>
+  <aside class="sidebar-drawer">
+    <div class="sidebar-container">
+      
+      <div class="sidebar-sticky"><a class="sidebar-brand" href="../index.html">
+  
+  
+  <span class="sidebar-brand-text">Handbook and guide: Statistical and Solid State Physics 0.1 documentation</span>
+  
+</a><form class="sidebar-search-container" method="get" action="../search.html" role="search">
+  <input class="sidebar-search" placeholder="Search" name="q" aria-label="Search">
+  <input type="hidden" name="check_keywords" value="yes">
+  <input type="hidden" name="area" value="default">
+</form>
+<div id="searchbox"></div><div class="sidebar-scroll"><div class="sidebar-tree">
+  <p class="caption" role="heading"><span class="caption-text">Table of Contents</span></p>
+<ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../apidocs/index.html">API Reference</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" role="switch" type="checkbox"/><label for="toctree-checkbox-1"><div class="visually-hidden">Toggle navigation of API Reference</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../apidocs/SttPhscsPckg/SttPhscsPckg.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">SttPhscsPckg</span></code></a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" role="switch" type="checkbox"/><label for="toctree-checkbox-2"><div class="visually-hidden">Toggle navigation of SttPhscsPckg</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../apidocs/SttPhscsPckg/SttPhscsPckg.class_test.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">SttPhscsPckg.class_test</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../apidocs/SttPhscsPckg/SttPhscsPckg.EinsteinSolids.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">SttPhscsPckg.EinsteinSolids</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../apidocs/SttPhscsPckg/SttPhscsPckg.ideal_gas.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">SttPhscsPckg.ideal_gas</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../apidocs/SttPhscsPckg/SttPhscsPckg.MathCalc.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">SttPhscsPckg.MathCalc</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../apidocs/SttPhscsPckg/SttPhscsPckg.PartitionFunctions.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">SttPhscsPckg.PartitionFunctions</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../apidocs/SttPhscsPckg/SttPhscsPckg.pytFunktioner.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">SttPhscsPckg.pytFunktioner</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../apidocs/SttPhscsPckg/SttPhscsPckg.reciprocal_lattice_calc.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">SttPhscsPckg.reciprocal_lattice_calc</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../apidocs/SttPhscsPckg/SttPhscsPckg.SystemEntropy.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">SttPhscsPckg.SystemEntropy</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../usage.html">Usage</a></li>
+</ul>
+
+</div>
+</div>
+
+      </div>
+      
+    </div>
+  </aside>
+  <div class="main">
+    <div class="content">
+      <div class="article-container">
+        <a href="#" class="back-to-top muted-link">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12z"></path>
+          </svg>
+          <span>Back to top</span>
+        </a>
+        <div class="content-icon-container">
+          
+<div class="theme-toggle-container theme-toggle-content">
+            <button class="theme-toggle">
+              <div class="visually-hidden">Toggle Light / Dark / Auto color theme</div>
+              <svg class="theme-icon-when-auto"><use href="#svg-sun-half"></use></svg>
+              <svg class="theme-icon-when-dark"><use href="#svg-moon"></use></svg>
+              <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
+            </button>
+          </div>
+          <label class="toc-overlay-icon toc-content-icon no-toc" for="__toc">
+            <div class="visually-hidden">Toggle table of contents sidebar</div>
+            <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
+          </label>
+        </div>
+        <article role="main">
+          <section class="tex2jax_ignore mathjax_ignore" id="statistical-physics-handbook">
+<h1>Statistical physics Handbook<a class="headerlink" href="#statistical-physics-handbook" title="Link to this heading">#</a></h1>
+<p>This handbook is written December 2023 for the course: “Statistical physics and solid state physics”
+The structure of each section will be as follows:</p>
+<ul class="simple">
+<li><p>Reference guide ie. materials used for this section.</p>
+<ul>
+<li><p>When more than one ref. the bold ref is the better one.</p></li>
+</ul>
+</li>
+<li><p>Typical questions with generic answers. If maths are used, given example of calculations.</p></li>
+</ul>
+<p>The exam will be with all aids allowed except internet. This guide will therefore use no internet or communications.</p>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="table-of-contents">
+<h1>Table of Contents<a class="headerlink" href="#table-of-contents" title="Link to this heading">#</a></h1>
+<ul class="simple">
+<li><p><a class="reference internal" href="#crystal-structure">Crystal Structure</a></p>
+<ul>
+<li><p><a class="reference internal" href="#the-reciprocal-lattice">The reciprocal lattice</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#heat-capacity">Heat capacity</a></p></li>
+<li><p><a class="reference internal" href="#lattice-vibrations">Lattice vibrations</a></p></li>
+<li><p><a class="reference internal" href="#bloch-theorem">Bloch theorem</a></p></li>
+<li><p><a class="reference internal" href="#metallic-conduction">Metallic conduction</a></p></li>
+<li><p><a class="reference internal" href="#nearly-free-electron-model">Nearly free electron model</a></p></li>
+<li><p><a class="reference internal" href="#metals-and-insulators">Metals and insulators</a></p></li>
+<li><p><a class="reference internal" href="#semiconductors">Semiconductors</a></p></li>
+<li><p><a class="reference internal" href="#curie-paramagnetism">Curie Paramagnetism</a></p></li>
+<li><p><a class="reference internal" href="#superconductivity">Superconductivity</a></p></li>
+<li><p><a class="reference internal" href="#lattice-waves">Lattice waves</a></p></li>
+<li><p><a class="reference internal" href="#density-of-states">Density of states</a></p></li>
+<li><p><a class="reference internal" href="#band-structure">Band structure</a></p></li>
+<li><p><a class="reference internal" href="#magnetism">Magnetism</a></p></li>
+<li><p><a class="reference internal" href="#lattice">Lattice</a></p></li>
+<li><p><a class="reference internal" href="#x-ray-diffraction">X-Ray diffraction</a></p></li>
+<li><p><a class="reference internal" href="#periodic-boundary-conditions">Periodic boundary conditions</a></p></li>
+<li><p><a class="reference internal" href="#vibrations">Vibrations</a></p></li>
+<li><p><a class="reference internal" href="#interatomic-potential">Interatomic potential</a></p></li>
+<li><p><a class="reference internal" href="#electronic-states-in-crystals">Electronic states in crystals</a></p></li>
+<li><p><a class="reference internal" href="#thermal-equilibrium">Thermal equilibrium</a></p></li>
+<li><p><a class="reference internal" href="#site-on-surface">Site on surface</a></p></li>
+<li><p><a class="reference internal" href="#entropy-of-a-system">Entropy of a system</a></p>
+<ul>
+<li><p><a class="reference internal" href="#entropy-of-einstein-solid">Entropy of Einstein solid</a></p>
+<ul>
+<li><p><a class="reference internal" href="#limit-of-q-ll-n"><span class="xref myst">Limit of <span class="math notranslate nohighlight">\(q \\ll N\)</span></span></a></p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#entropy-of-ideal-gas">Entropy of ideal gas</a></p>
+<ul>
+<li><p><a class="reference internal" href="#symbolic-manipulation">Symbolic manipulation</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#two-state-paramagnet">Two-state Paramagnet</a></p>
+<ul>
+<li><p><a class="reference internal" href="#id1">Symbolic manipulation</a></p></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#microstates-of-a-system">Microstates of a system</a></p>
+<ul>
+<li><p><a class="reference internal" href="#miscellanious-microstate-problems">Miscellanious microstate problems</a></p></li>
+<li><p><a class="reference internal" href="#einstein-solids">Einstein solids</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#partition-function">Partition function</a></p>
+<ul>
+<li><p><a class="reference internal" href="#problems-and-answers">Problems and answers</a></p></li>
+<li><p><a class="reference internal" href="#average-energy">Average energy</a></p></li>
+<li><p><a class="reference internal" href="#fraction-of-upper-state-lower-state">Fraction of upper state / lower state</a></p></li>
+<li><p><a class="reference internal" href="#single-harmonic-oscillator">Single harmonic Oscillator</a></p></li>
+<li><p><a class="reference internal" href="#molecular-clouds">molecular clouds</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#energies-of-a-system">Energies of a system</a></p>
+<ul>
+<li><p><a class="reference internal" href="#free-energy-and-chemical-thermodynamics">Free Energy and Chemical Thermodynamics</a></p></li>
+<li><p><a class="reference internal" href="#ideal-gas-calculations">Ideal gas calculations</a></p></li>
+<li><p><a class="reference internal" href="#pv-diagrams">PV diagrams</a></p></li>
+<li><p><a class="reference internal" href="#helmholtz-free-energy-and-ideal-gas">Helmholtz free energy and ideal gas</a></p></li>
+<li><p><a class="reference internal" href="#maxwell-distribution">Maxwell distribution</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#blackbody-radiation">Blackbody radiation</a></p></li>
+<li><p><a class="reference internal" href="#thermodynamic-identity">Thermodynamic identity</a></p></li>
+<li><p><a class="reference internal" href="#magnetization-of-a-system">Magnetization of a system</a></p></li>
+<li><p><a class="reference internal" href="#debye-solid-calculations-and-deriviations">Debye solid calculations and deriviations</a></p></li>
+<li><p><a class="reference internal" href="#adsorption-sites">Adsorption sites</a></p></li>
+<li><p><a class="reference internal" href="#eos-spin-1-2-spin-1-particles">EoS Spin-1/2 Spin-1 particles</a></p></li>
+<li><p><a class="reference internal" href="#thermal-and-diffusive-equilibrium">Thermal and Diffusive equilibrium</a></p></li>
+<li><p><a class="reference internal" href="#chemical-potential">Chemical potential</a></p>
+<ul>
+<li><p><a class="reference internal" href="#einstein-solid">Einstein Solid</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#id2">Heat capacity</a></p></li>
+<li><p><a class="reference internal" href="#random-distribution">Random distribution</a></p></li>
+<li><p><a class="reference internal" href="#combinatorics">Combinatorics</a></p></li>
+</ul>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="solid-state-physics">
+<h1>Solid State Physics<a class="headerlink" href="#solid-state-physics" title="Link to this heading">#</a></h1>
+<p>This part is for the solid state physics part of the course but will definetely be comparable to the whole course in general</p>
+<section id="crystal-structure">
+<h2>Crystal Structure<a class="headerlink" href="#crystal-structure" title="Link to this heading">#</a></h2>
+<p><strong>When drawing a lattice please refer to:</strong></p>
+<ul class="simple">
+<li><p>‘Solid State Physics - Phillip Hoffman’ pp. 1-18</p></li>
+<li><p><em>‘Solid State chemistry and its Applications’ pp. 12-14</em></p></li>
+</ul>
+<section id="the-reciprocal-lattice">
+<h3>The reciprocal lattice<a class="headerlink" href="#the-reciprocal-lattice" title="Link to this heading">#</a></h3>
+<blockquote>
+<div><p>The link between normal space lattice and reciprocal space lattice lies in the miller index, which can be used in calculations from diffraction experiments. The miller indices are the reciprocal values of the normalized coordinates in a unitcell.</p>
+</div></blockquote>
+<p><strong>When drawing a reciprocal lattice please refer to:</strong></p>
+<ul class="simple">
+<li><p>‘Solid State Physics - Phillip Hoffman’ pp. 11-18</p></li>
+</ul>
+<p>to calculate reciprocal vectors from real vectors use the function:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">res</span> <span class="o">=</span> <span class="n">calc_rec_lat</span><span class="p">(</span><span class="n">a1</span><span class="p">,</span><span class="n">a2</span><span class="p">,</span><span class="n">a3</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">res</span><span class="p">)</span>
+</pre></div>
+</div>
+<p><strong>When answering True or False statements please refer to the following:</strong></p>
+<ul class="simple">
+<li><p>‘Solid State Physics - Phillip Hoffman’ pp. 11-18</p>
+<ul>
+<li><p>Especially Equations: 1.12-1.18</p></li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<div><p>Remember to take the crystal structure into consideration ie. the cubic cell will give rise to all sides being the same and thus some of the reciprocal vectors being the same.</p>
+</div></blockquote>
+</section>
+</section>
+<section id="heat-capacity">
+<h2>Heat capacity<a class="headerlink" href="#heat-capacity" title="Link to this heading">#</a></h2>
+<p>EoS is testing</p>
+<p>Lipsum</p>
+</section>
+<section id="lattice-vibrations">
+<h2>Lattice vibrations<a class="headerlink" href="#lattice-vibrations" title="Link to this heading">#</a></h2>
+<p>Lipsum</p>
+</section>
+<section id="bloch-theorem">
+<h2>Bloch theorem<a class="headerlink" href="#bloch-theorem" title="Link to this heading">#</a></h2>
+<p>Lipsum</p>
+</section>
+<section id="metallic-conduction">
+<h2>Metallic conduction<a class="headerlink" href="#metallic-conduction" title="Link to this heading">#</a></h2>
+<p>Lipsum</p>
+</section>
+<section id="nearly-free-electron-model">
+<h2>Nearly free electron model<a class="headerlink" href="#nearly-free-electron-model" title="Link to this heading">#</a></h2>
+<p>Lipsum</p>
+</section>
+<section id="metals-and-insulators">
+<h2>Metals and insulators<a class="headerlink" href="#metals-and-insulators" title="Link to this heading">#</a></h2>
+<p>Lipsum</p>
+</section>
+<section id="semiconductors">
+<h2>Semiconductors<a class="headerlink" href="#semiconductors" title="Link to this heading">#</a></h2>
+<p>Lipsum</p>
+</section>
+<section id="curie-paramagnetism">
+<h2>Curie Paramagnetism<a class="headerlink" href="#curie-paramagnetism" title="Link to this heading">#</a></h2>
+<p>Lipsum</p>
+</section>
+<section id="superconductivity">
+<h2>Superconductivity<a class="headerlink" href="#superconductivity" title="Link to this heading">#</a></h2>
+<p>Lipsum</p>
+</section>
+<section id="lattice-waves">
+<h2>Lattice waves<a class="headerlink" href="#lattice-waves" title="Link to this heading">#</a></h2>
+<p>Lipsum</p>
+</section>
+<section id="density-of-states">
+<h2>Density of states<a class="headerlink" href="#density-of-states" title="Link to this heading">#</a></h2>
+<p>Lipsum</p>
+</section>
+<section id="band-structure">
+<h2>Band structure<a class="headerlink" href="#band-structure" title="Link to this heading">#</a></h2>
+<p>Lipsum</p>
+</section>
+<section id="magnetism">
+<h2>Magnetism<a class="headerlink" href="#magnetism" title="Link to this heading">#</a></h2>
+<p>Lipsum</p>
+</section>
+<section id="lattice">
+<h2>Lattice<a class="headerlink" href="#lattice" title="Link to this heading">#</a></h2>
+<p>Lipsum</p>
+</section>
+<section id="x-ray-diffraction">
+<h2>X-Ray diffraction<a class="headerlink" href="#x-ray-diffraction" title="Link to this heading">#</a></h2>
+<p>Lipsum</p>
+</section>
+<section id="periodic-boundary-conditions">
+<h2>Periodic boundary conditions<a class="headerlink" href="#periodic-boundary-conditions" title="Link to this heading">#</a></h2>
+<p>Lipsum</p>
+</section>
+<section id="vibrations">
+<h2>Vibrations<a class="headerlink" href="#vibrations" title="Link to this heading">#</a></h2>
+<p>Lipsum</p>
+</section>
+<section id="interatomic-potential">
+<h2>Interatomic potential<a class="headerlink" href="#interatomic-potential" title="Link to this heading">#</a></h2>
+<p>Lipsum</p>
+</section>
+<section id="electronic-states-in-crystals">
+<h2>Electronic states in crystals<a class="headerlink" href="#electronic-states-in-crystals" title="Link to this heading">#</a></h2>
+<p>When deriving the different electronic states for a polarizing defect in a crystal try to consider the polariation vectors as one matrix instead, and then use sympy to print the product bewteen the energy and the polarization vector. Then to get the degeneracy you just have to count how many outcomes of each.</p>
+<p>When deriving the partition function use the fuynction <code class="docutils literal notranslate"><span class="pre">partition_func_template</span></code> from the module <code class="docutils literal notranslate"><span class="pre">PartitionFunctions</span></code> and use sympy from there to manipulate the expreession. if <code class="docutils literal notranslate"><span class="pre">.subs()</span></code> does not work, just rewrite the expression manually and continue from there.</p>
+<p>If doing it manually please refer to <a class="reference internal" href="#"><span class="xref myst">trigonometric identities</span></a></p>
+</section>
+<section id="thermal-equilibrium">
+<h2>Thermal equilibrium<a class="headerlink" href="#thermal-equilibrium" title="Link to this heading">#</a></h2>
+<p>Lipsum</p>
+</section>
+<section id="site-on-surface">
+<h2>Site on surface<a class="headerlink" href="#site-on-surface" title="Link to this heading">#</a></h2>
+</section>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="statistical-physics">
+<h1>Statistical Physics<a class="headerlink" href="#statistical-physics" title="Link to this heading">#</a></h1>
+<p>This part will tackle the statistical part of the course but will definetely be usefull for other things.</p>
+<section id="entropy-of-a-system">
+<h2>Entropy of a system<a class="headerlink" href="#entropy-of-a-system" title="Link to this heading">#</a></h2>
+<div class="math-wrapper docutils container">
+<div class="math notranslate nohighlight">
+\[
+S = k \cdot ln(\Omega)
+\]</div>
+</div>
+<div class="math-wrapper docutils container">
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\Omega = \Omega_A \cdot \Omega_B\\
+\end{split}\]</div>
+</div>
+<div class="math-wrapper docutils container">
+<div class="math notranslate nohighlight">
+\[
+Two\ State:
+\Omega_i(N,n) = \frac{N!}{n! \cdot (N-n)!} = \binom{N}{n}
+\]</div>
+</div>
+<div class="math-wrapper docutils container">
+<div class="math notranslate nohighlight">
+\[\begin{split}
+Two\ State paramagnet: \Omega(N_\uparrow) = \binom{N}{N_\uparrow}\\
+\end{split}\]</div>
+</div>
+<div class="math-wrapper docutils container">
+<div class="math notranslate nohighlight">
+\[
+Einstein\ solid: \Omega(N,q) = \binom{q+N-1}{q}
+\]</div>
+</div>
+<div class="math-wrapper docutils container">
+<div class="math notranslate nohighlight">
+\[
+Ideal\ Gas: \Omega(U,V,N) = f(N)V^N U^{3N/2}
+\]</div>
+</div>
+<div class="math-wrapper docutils container">
+<div class="math notranslate nohighlight">
+\[
+Interacting\ Ideal\ Gasses: \Omega_{total} = \left(f(N)\right)^2\ (V_AV_B)^N\ (U_AU_B)^{3N/2}
+\]</div>
+</div>
+<div class="math-wrapper docutils container">
+<div class="math notranslate nohighlight">
+\[
+where\ f(N) = \frac{\pi^{3N/2} \cdot (2m)^{3N/2}}{N! \cdot h^{3N} \cdot (3N/2)!}
+\]</div>
+</div>
+<p>For all the factorials it is very usefull to use Stirlings approximations:</p>
+<div class="math-wrapper docutils container">
+<div class="math notranslate nohighlight">
+\[\begin{split}
+N! = N^N \cdot e^{-N} \cdot \sqrt{2 \pi N} \\
+\Updownarrow \\
+ln(N!) = N\ ln(N) - N
+\end{split}\]</div>
+</div>
+<p>These approximations are used without warning so keep up :P</p>
+<section id="entropy-of-einstein-solid">
+<h3>Entropy of Einstein solid<a class="headerlink" href="#entropy-of-einstein-solid" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>“An introduction to thermal physics” by Daniel Schröeder, pp. 74-77</p></li>
+<li><p>AnswersC.pdf problem 2.30</p>
+<ul>
+<li><p>The appropriate approximations should be considered.</p></li>
+<li><p>if given approximations, write the logarithms out, so python can handle the numbers.</p></li>
+</ul>
+</li>
+</ul>
+<p>for similar problems as problem 2.30 use the function <code class="docutils literal notranslate"><span class="pre">ES_entropy_two()</span></code> from the module <code class="docutils literal notranslate"><span class="pre">SystemEntropy.py</span></code></p>
+<section id="limit-of-q-ll-n">
+<h4>Limit of <span class="math notranslate nohighlight">\(q \ll N\)</span><a class="headerlink" href="#limit-of-q-ll-n" title="Link to this heading">#</a></h4>
+<p>When finding a formula for the temperature of an Einstein solid refer to AnswersC.pdf
+problem 3.5 which also solves for the energy to give:
+$<span class="math notranslate nohighlight">\(U = N \epsilon \cdot e^{\frac{-\epsilon}{k T}}\)</span>$</p>
+<p>Calculating the heat capacity of an Einstein solid please refer to ‘AnswersC.pdf’
+which tells that it is calculated by:</p>
+<div class="math-wrapper docutils container">
+<div class="math notranslate nohighlight">
+\[
+C_V = \left( \frac{\partial U}{\partial T} \right)_{V,N}
+= \frac{N \epsilon^2}{k T^2} \cdot e^{-\epsilon/(k T)}
+\]</div>
+</div>
+<p>it could also be written as:</p>
+<div class="math-wrapper docutils container">
+<div class="math notranslate nohighlight">
+\[
+\frac{C_V}{Nk} = \frac{1}{\left(kT / \epsilon \right)^2} e^{-1 / (kT)}
+\]</div>
+</div>
+<p>A sketch of the heat capacity can look like this:</p>
+<p><img alt="Alt text" src="../_images/image-2.png" /></p>
+</section>
+</section>
+<section id="entropy-of-ideal-gas">
+<h3>Entropy of ideal gas<a class="headerlink" href="#entropy-of-ideal-gas" title="Link to this heading">#</a></h3>
+<section id="symbolic-manipulation">
+<h4>Symbolic manipulation<a class="headerlink" href="#symbolic-manipulation" title="Link to this heading">#</a></h4>
+<p>Use ‘AnswerC.pdf’ problem 2.34 when deriving <span class="math notranslate nohighlight">\(\Delta S = \frac{Q}{T}\)</span>
+for an isothermal process with U fixed.</p>
+<p>Use ‘AnswerC.pdf’ problem 3.25 when:</p>
+<ul class="simple">
+<li><p>deriving an expression for he entropy of
+an Einstein solid as a function of N and q(where N is number of oscillators and
+q is number of energy units).</p></li>
+<li><p>calculating the temperature of an Einstein solid as a function of its energy</p></li>
+<li><p>deriving an equation for the heat capacity, by using the energy as a function of temperature.</p></li>
+<li><p>Checking the limits of heat capacity at <span class="math notranslate nohighlight">\(T \rightarrow \infin\)</span>.</p></li>
+<li><p>showing a graph of heat capacity as a function of T:
+<img alt="Alt text" src="../_images/image-4.png" /></p></li>
+</ul>
+</section>
+</section>
+<section id="two-state-paramagnet">
+<h3>Two-state Paramagnet<a class="headerlink" href="#two-state-paramagnet" title="Link to this heading">#</a></h3>
+<section id="id1">
+<h4>Symbolic manipulation<a class="headerlink" href="#id1" title="Link to this heading">#</a></h4>
+<p>When expressing the Entropy as a function of temperature please refer to
+‘AnswersC.pdf’. This also checks for the behavior as <span class="math notranslate nohighlight">\(T \rightarrow 0\)</span> and <span class="math notranslate nohighlight">\(T \rightarrow \infin\)</span>.</p>
+<p>The deriviation is rather long, but hang in there :P</p>
+</section>
+</section>
+</section>
+<section id="microstates-of-a-system">
+<h2>Microstates of a system<a class="headerlink" href="#microstates-of-a-system" title="Link to this heading">#</a></h2>
+<p>The problems of week 36 is mostly about einstein solids and a two state paramagnet</p>
+<section id="miscellanious-microstate-problems">
+<h3>Miscellanious microstate problems<a class="headerlink" href="#miscellanious-microstate-problems" title="Link to this heading">#</a></h3>
+<p>A system which consists of two independent variables has a total number of microstates. The number of microstates can be described by the product of the amount of microstates for the two individual variables. This is comparable to a system of two Einstein solids.</p>
+</section>
+<section id="einstein-solids">
+<h3>Einstein solids<a class="headerlink" href="#einstein-solids" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>“An introduction to thermal physics” by Daniel Schröeder, pp. 52-65</p></li>
+</ul>
+<p>for calculations of two equal einstein solids in one system use the module <a class="reference internal" href="#def2"><span class="xref myst">MathCalc</span></a>
+with the function <code class="docutils literal notranslate"><span class="pre">two_einstein</span></code> which will return the number of macrostates, number of microstates,
+probability of one solid having all of the energy, and the probability of the two solids sharing it equally.</p>
+<p>If faced with two solids which are not equal use the function <code class="docutils literal notranslate"><span class="pre">binom</span></code> from the module <code class="docutils literal notranslate"><span class="pre">scipy.special</span></code>
+to calculate the binomial coefficient. remember that the total number of microstates is the product of the number of microstates of the individual solids. and the probablity is the number of microstates for a given state divided by the total number of microstates.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">scipy.special</span> <span class="kn">import</span> <span class="n">binom</span>
+</pre></div>
+</div>
+</section>
+</section>
+<section id="partition-function">
+<h2>Partition function<a class="headerlink" href="#partition-function" title="Link to this heading">#</a></h2>
+<section id="problems-and-answers">
+<h3>Problems and answers<a class="headerlink" href="#problems-and-answers" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>‘ProblemsE.pdf’ and ‘AnswersE.pdf’ problem E1</p></li>
+<li><p>‘ProblemsD.pdf’ and ‘AnswersD.pdf’ problem 6.16</p></li>
+</ul>
+</section>
+<section id="average-energy">
+<h3>Average energy<a class="headerlink" href="#average-energy" title="Link to this heading">#</a></h3>
+<p>Proving the average energy from the partition function, when a system is in equilibrium with a resevoir at temperature T.</p>
+<ul class="simple">
+<li><p>‘AnswersD.pdf’ problem 6.16</p></li>
+</ul>
+<p>The average energy is the sum of all the different state energies weighted by their probabilities and for a symbolic deriviation use the following:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">PartitionFunctions</span> <span class="kn">import</span> <span class="n">PF_average_energy</span><span class="p">,</span> <span class="n">PF_heat_capacity</span>
+
+<span class="n">PF_average_energy</span><span class="p">(</span><span class="n">test_func</span><span class="p">,</span><span class="n">beta</span><span class="p">)</span>
+
+<span class="n">PF_heat_capacity</span><span class="p">(</span><span class="n">test_func</span><span class="p">,</span><span class="n">beta</span><span class="p">)</span>
+</pre></div>
+</div>
+<blockquote>
+<div><p><strong>!!Beware!! when using these functions be sure that you are using the correct assumptions. The script cannot make assumptions based on things given in the text, so it is necessary to incorporate assumptions or simplifications into your expression before using it</strong></p>
+</div></blockquote>
+<p>This can be done by incorporating predicates when defining symbols as an example:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span>
+<span class="kn">from</span> <span class="nn">PartitionFunctions</span> <span class="kn">import</span> <span class="n">PF_average_energy</span><span class="p">,</span> <span class="n">PF_heat_capacity</span>
+
+<span class="kn">from</span> <span class="nn">sympy</span> <span class="kn">import</span> <span class="n">symbols</span>
+
+<span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">z</span> <span class="o">=</span> <span class="n">symbols</span><span class="p">(</span><span class="s1">&#39;x y z&#39;</span><span class="p">,</span> <span class="n">positive</span> <span class="o">=</span> <span class="kc">True</span> <span class="p">)</span> <span class="c1"># for positive values - useful for constants</span>
+</pre></div>
+</div>
+<p>For the easiest application of this use the <code class="docutils literal notranslate"><span class="pre">simplify</span></code> function from the <code class="docutils literal notranslate"><span class="pre">sympy</span></code> module to make the initial expression easier to manipulate manually and then rewrite them into your own calculation script. If <code class="docutils literal notranslate"><span class="pre">simplify</span></code> does not cut it, try with <code class="docutils literal notranslate"><span class="pre">collect</span></code>, and if it still does not work… <strong>Good luck</strong></p>
+<ul class="simple">
+<li><p>‘AnswersD.pdf’ Last 4 problems gives a not so good description of how to handle manipulations like these.</p></li>
+</ul>
+</section>
+<section id="fraction-of-upper-state-lower-state">
+<h3>Fraction of upper state / lower state<a class="headerlink" href="#fraction-of-upper-state-lower-state" title="Link to this heading">#</a></h3>
+<p>When determining the fraction of probabilities, beware of the question describtion. Is it asking for the number of particles of higher energy per particles of lower energy particles or is it asking for the percentage of particles in the specific state.
+Either way use <code class="docutils literal notranslate"><span class="pre">Frac_partition_funcs(E_difference,</span> <span class="pre">T)</span></code> from the <code class="docutils literal notranslate"><span class="pre">PartitionFunctions</span></code> module.</p>
+</section>
+<section id="single-harmonic-oscillator">
+<h3>Single harmonic Oscillator<a class="headerlink" href="#single-harmonic-oscillator" title="Link to this heading">#</a></h3>
+<p>When working with a single oscillator it is the same approach as for anything else. It just takes advantage of the fact that the partition function does not change depending on the energy, and therefor is a very nice place to start when calculating the average energy of a system, and then using that average to get the heat capacity. When working symbolically with this please refer to the module <code class="docutils literal notranslate"><span class="pre">PartitionFunctions</span></code> and use the functions</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">PartitionFunctions</span> <span class="kn">import</span> <span class="n">PF_average_energy</span><span class="p">,</span> <span class="n">PF_heat_capacity</span>
+
+<span class="n">PF_average_energy</span><span class="p">(</span><span class="n">test_func</span><span class="p">,</span><span class="n">beta</span><span class="p">)</span>
+
+<span class="n">PF_heat_capacity</span><span class="p">(</span><span class="n">test_func</span><span class="p">,</span><span class="n">beta</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>I would recommend using the latter of the two functions, because it makes use of the average energy function and there displays the following results:</p>
+<ul class="simple">
+<li><p>Average energy in terms of <span class="math notranslate nohighlight">\(\beta\)</span></p></li>
+<li><p>Total energy for N particles in terms of <span class="math notranslate nohighlight">\(\beta\)</span></p></li>
+<li><p>Total energy for N particles in terms of <span class="math notranslate nohighlight">\(\frac{1}{k \cdot T}\)</span></p></li>
+<li><p>Heat Capacity at constant volume in terms of <span class="math notranslate nohighlight">\(T\)</span></p></li>
+<li><p>Heat capacity evaluated at both <span class="math notranslate nohighlight">\(T \rightarrow 0\)</span> and <span class="math notranslate nohighlight">\(T \rightarrow \infin\)</span></p></li>
+</ul>
+<blockquote>
+<div><p><strong>Be aware of <span class="math notranslate nohighlight">\(\beta\)</span> and make sure that it is written properly into the first function, so it is not confused as <span class="math notranslate nohighlight">\(\frac{h f}{\beta}\)</span> which would be equal to <span class="math notranslate nohighlight">\(h f k T\)</span> and not <span class="math notranslate nohighlight">\(\frac{hf}{kT}\)</span> as <span class="math notranslate nohighlight">\(\beta = \frac{1}{kT}\)</span></strong></p>
+</div></blockquote>
+</section>
+<section id="molecular-clouds">
+<h3>molecular clouds<a class="headerlink" href="#molecular-clouds" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>refer to ‘AnswersD.pdf’ problem 6.12 when in equilibrium</p></li>
+</ul>
+<p>Remember to change use the correct boltzmann constant.</p>
+</section>
+</section>
+<section id="energies-of-a-system">
+<h2>Energies of a system<a class="headerlink" href="#energies-of-a-system" title="Link to this heading">#</a></h2>
+<section id="free-energy-and-chemical-thermodynamics">
+<h3>Free Energy and Chemical Thermodynamics<a class="headerlink" href="#free-energy-and-chemical-thermodynamics" title="Link to this heading">#</a></h3>
+<p>When asked about any kind of free energy and thermodynamic identities please refer to:</p>
+<ul class="simple">
+<li><p>“An introduction to thermal physics” by Daniel Schröeder, pp. 156-166</p></li>
+</ul>
+<p>To create an identity for a given free energy, write it up in small differences i.e. the actual thermodynamic identity:</p>
+<div class="math-wrapper docutils container">
+<div class="math notranslate nohighlight">
+\[dU = TdS - PdV + \mu dN\]</div>
+</div>
+<p>Then use rewrite your free energy change with <span class="math notranslate nohighlight">\(dU\)</span>. Now use this identity to create partial derivatives by manipulating the expression. Remember to write out which variables you are holding constant.</p>
+<ul class="simple">
+<li><p>“An introduction to thermal physics” by Daniel Schröeder, pp. 161-162</p></li>
+</ul>
+<p>When showing wether your free energy tends to increase or decrease at equilibrium, write up the total entropy in terms of the system entropy and resevoir entropy. then rewrite the resvoir entropy using the thermodynamic identity and consider which small changes are taking place. From there on you just simplify and rewrite and simplify and rewrite and simplify and rewrite… until you are satisfied with the outcome and you have the total entropy in terms of your free energy.</p>
+<p>If working with a system where no particle is allowed to leave the system, you can use the following equations to simplify your working progress.</p>
+<figure>
+    <img src="figs/energytendencieschfivetwo.png"
+         alt="tendencies of energy">
+    <figcaption>"An introduction to thermal physics" by Daniel Schröeder, p.162
+    </figcaption>
+</figure>
+</section>
+<section id="ideal-gas-calculations">
+<h3>Ideal gas calculations<a class="headerlink" href="#ideal-gas-calculations" title="Link to this heading">#</a></h3>
+<p><strong>Refer to the following when working with ideal gas:</strong></p>
+<ul class="simple">
+<li><p>“An introduction to thermal physics” by Daniel Schröeder, pp. 6-14</p></li>
+</ul>
+<p>When calculating the volume for an ideal gas, at room temp, and 1 atm use the function <code class="docutils literal notranslate"><span class="pre">volume_id_gas(N=number</span> <span class="pre">of</span> <span class="pre">molecules)</span></code> if calculating the volume per molecule divide by N. remember to state, which room temperature, that is used.</p>
+<p>When manipulating functions refer to the following table for different functions:</p>
+</section>
+<section id="pv-diagrams">
+<h3>PV diagrams<a class="headerlink" href="#pv-diagrams" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>“An introduction to thermal physics” by Daniel Schröeder, pp. 17-28</p></li>
+<li><p><strong>“AnswersA.pdf” from weekly problems</strong></p></li>
+</ul>
+<p>When calculating different quantities such as Work done on the system refer to the <a class="reference internal" href="#table-of-equations">Table of equations</a></p>
+<p>When determining the sign of the quantities refer to the following table:</p>
+<p><img alt="Alt text" src="../_images/image-11.png" /></p>
+</section>
+<section id="helmholtz-free-energy-and-ideal-gas">
+<h3>Helmholtz free energy and ideal gas<a class="headerlink" href="#helmholtz-free-energy-and-ideal-gas" title="Link to this heading">#</a></h3>
+<p>When working with Helmholtz please please please…just give up…:</p>
+<p><img alt="Alt text" src="../_images/image-10.png" /><br />
+<em>definition of the free energy</em></p>
+<p><img alt="Alt text" src="../_images/image-111.png" /><br />
+<em>Giant leap to this clusion. Book says intuitive… i don’t think so…</em></p>
+<p><img alt="Alt text" src="../_images/image-12.png" /><br />
+<em>Also this, from the</em> ‘‘intuitive leap’’</p>
+<p>Also some references:</p>
+<ul class="simple">
+<li><p>“An introduction to thermal physics” by Daniel Schröeder, pp. 251-255</p></li>
+<li><p><strong>‘ProblemsE.pdf’ and ‘AnswersE.pdf’ problem E2</strong></p></li>
+</ul>
+<p>Remember that the partition functions oftentimes are not written, and <span class="math notranslate nohighlight">\(Z_i\)</span> is just a placeholder in the problem until given the actual function. This is true for Ideal Gasses at least.</p>
+<p>If you are ver very doven just use te function <code class="docutils literal notranslate"><span class="pre">symbolic_F_free_energy(num_particles</span> <span class="pre">=</span> <span class="pre">1,</span> <span class="pre">stirling_approx</span> <span class="pre">=</span> <span class="pre">True)</span></code> from the module <code class="docutils literal notranslate"><span class="pre">PartitionFunctions</span></code>.<br />
+Just remember that the number of particles is not the number of different atoms, but particles as a whole. that means for two atoms A and B creating a molecule AB thhe number of particles is now three and not two. If ou are only interested in the free energy as a function of PF set <code class="docutils literal notranslate"><span class="pre">stirling_approx</span> <span class="pre">=</span> <span class="pre">False</span></code> to get the precise energy. if this function is displayed using a <span class="math notranslate nohighlight">\(\Gamma\)</span> function remember that <span class="math notranslate nohighlight">\(\Gamma (n+1) = n!\)</span></p>
+</section>
+<section id="maxwell-distribution">
+<h3>Maxwell distribution<a class="headerlink" href="#maxwell-distribution" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>“An introduction to thermal physics” by Daniel Schröeder, pp. 244-246</p></li>
+</ul>
+<p>Remember when manipulating the distribution functions to write the integral in terms of <span class="math notranslate nohighlight">\(\exp{-x^2}\)</span>  and not <span class="math notranslate nohighlight">\(\exp{\frac{-mv^2}{kT}}\)</span> that is rewrite the expression with <span class="math notranslate nohighlight">\(x = v \cdot \sqrt{\frac{m}{kT}}\)</span></p>
+<p>This manipulation will allow for the use of the common integral table:</p>
+<p><img alt="Alt text" src="../_images/image-8.png" />
+<img alt="Alt text" src="../_images/image-9.png" /><br />
+<em>Common integral Table. taken from Atkins ‘Physical Chemistry’ pp. 862-863</em></p>
+</section>
+</section>
+<section id="blackbody-radiation">
+<h2>Blackbody radiation<a class="headerlink" href="#blackbody-radiation" title="Link to this heading">#</a></h2>
+<p>Lipsum</p>
+</section>
+<section id="thermodynamic-identity">
+<h2>Thermodynamic identity<a class="headerlink" href="#thermodynamic-identity" title="Link to this heading">#</a></h2>
+<p>Lipsum</p>
+</section>
+<section id="magnetization-of-a-system">
+<h2>Magnetization of a system<a class="headerlink" href="#magnetization-of-a-system" title="Link to this heading">#</a></h2>
+<p>Lipsum</p>
+</section>
+<section id="debye-solid-calculations-and-deriviations">
+<h2>Debye solid calculations and deriviations<a class="headerlink" href="#debye-solid-calculations-and-deriviations" title="Link to this heading">#</a></h2>
+<p>Lipsum</p>
+</section>
+<section id="adsorption-sites">
+<h2>Adsorption sites<a class="headerlink" href="#adsorption-sites" title="Link to this heading">#</a></h2>
+<p>Lipsum</p>
+</section>
+<section id="eos-spin-1-2-spin-1-particles">
+<h2>EoS Spin-1/2 Spin-1 particles<a class="headerlink" href="#eos-spin-1-2-spin-1-particles" title="Link to this heading">#</a></h2>
+<p><a class="reference internal" href="#README.md"><span class="xref myst">EoS</span></a></p>
+<p>Lipsum</p>
+</section>
+<section id="thermal-and-diffusive-equilibrium">
+<h2>Thermal and Diffusive equilibrium<a class="headerlink" href="#thermal-and-diffusive-equilibrium" title="Link to this heading">#</a></h2>
+</section>
+<section id="chemical-potential">
+<h2>Chemical potential<a class="headerlink" href="#chemical-potential" title="Link to this heading">#</a></h2>
+<div class="math-wrapper docutils container">
+<div class="math notranslate nohighlight">
+\[
+\mu \equiv - T \left(\frac{\partial S}{\partial N} \right)_{U,V}
+\]</div>
+</div>
+<section id="einstein-solid">
+<h3>Einstein Solid<a class="headerlink" href="#einstein-solid" title="Link to this heading">#</a></h3>
+<p>Deriving the chemical potential for an Einstein Solid with, <span class="math notranslate nohighlight">\(q \ll 1\)</span>
+and <span class="math notranslate nohighlight">\(N \ll 1\)</span> is done in ‘AnswersD.pdf’ problem 3.36. The definition of the chemical potential is used because no other information was given.</p>
+</section>
+</section>
+<section id="id2">
+<h2>Heat capacity<a class="headerlink" href="#id2" title="Link to this heading">#</a></h2>
+<p>Lipsum</p>
+</section>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="relevant-math">
+<h1>Relevant math<a class="headerlink" href="#relevant-math" title="Link to this heading">#</a></h1>
+<section id="random-distribution">
+<h2>Random distribution<a class="headerlink" href="#random-distribution" title="Link to this heading">#</a></h2>
+<p>When finding how many different distributions there are of a deck of cards the module: <a class="reference download internal" download="" href="../_downloads/a8196e6632a3fa62fad26395772cead9/MathCalc.py"><span class="xref download myst">Mathematics</span></a></p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">rand_distribution</span><span class="p">(</span><span class="n">N</span><span class="o">=</span><span class="s1">&#39;number of distinguishable inputs&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>When N &gt;&gt; 1 Stirlings approximation is valid.</p>
+<div class="math-wrapper docutils container">
+<div class="math notranslate nohighlight">
+\[\begin{split}
+N! = N^N \cdot \exp{-N} \cdot \sqrt{2 \pi N} \\
+\&amp; \\
+ln(N!) = N \cdot ln\left( N \right) - N
+\end{split}\]</div>
+</div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">stirling_app</span><span class="p">(</span><span class="n">N</span><span class="o">=</span><span class="s1">&#39;number of distinguishable inputs&#39;</span><span class="p">)</span>
+
+<span class="n">stirling_app_ln</span><span class="p">(</span><span class="n">N</span><span class="o">=</span><span class="s1">&#39;number of distinguishable imputs&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>when calculating the number of different outcomes for a smaller population than the total use the <code class="docutils literal notranslate"><span class="pre">scipy.stats</span></code> module, and please refer to the Statistics course book for examples of use.</p>
+</section>
+<section id="combinatorics">
+<h2>Combinatorics<a class="headerlink" href="#combinatorics" title="Link to this heading">#</a></h2>
+<p>when calculating number of outcomes refer to the module <code class="docutils literal notranslate"><span class="pre">MathCalc</span></code></p>
+</section>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="table-of-equations">
+<h1>Table of equations<a class="headerlink" href="#table-of-equations" title="Link to this heading">#</a></h1>
+<div class="table-wrapper colwidths-auto docutils container">
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head text-center"><p>function</p></th>
+<th class="head text-center"><p>Constants</p></th>
+<th class="head text-center"><p>Context</p></th>
+<th class="head text-center"><p>Reference</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-center"><p>PV = NkT</p></td>
+<td class="text-center"><p>k</p></td>
+<td class="text-center"><p>Ideal gas law</p></td>
+<td class="text-center"><p>eq. 1.5 Intro Thermal Physics</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p><img alt="Alt text" src="../_images/image3.png" /></p></td>
+<td class="text-center"><p>k</p></td>
+<td class="text-center"><p>…</p></td>
+<td class="text-center"><p>…</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="table-wrapper colwidths-auto docutils container">
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Identity</p></th>
+<th class="head"><p>Formula</p></th>
+<th class="head"><p>Explanation</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Pythagorean identity</p></td>
+<td><p><span class="math notranslate nohighlight">\(\sin^2 \theta + \cos^2 \theta = 1\)</span></p></td>
+<td><p>Follows from the Pythagorean theorem applied to a unit circle</p></td>
+</tr>
+<tr class="row-odd"><td><p>Reciprocal identity</p></td>
+<td><p><span class="math notranslate nohighlight">\(\sin \theta = \frac{1}{\csc \theta}\)</span></p></td>
+<td><p>Follows from the definition of cosecant as the reciprocal of sine</p></td>
+</tr>
+<tr class="row-even"><td><p>Quotient identity</p></td>
+<td><p><span class="math notranslate nohighlight">\(\tan \theta = \frac{\sin \theta}{\cos \theta}\)</span></p></td>
+<td><p>Follows from the definition of tangent as the ratio of sine and cosine</p></td>
+</tr>
+<tr class="row-odd"><td><p>Sum of angles identity</p></td>
+<td><p><span class="math notranslate nohighlight">\(\sin(\alpha + \beta) = \sin \alpha \cos \beta + \cos \alpha \sin \beta\)</span></p></td>
+<td><p>Follows from the addition formula for complex exponentials</p></td>
+</tr>
+<tr class="row-even"><td><p>Double angle identity</p></td>
+<td><p><span class="math notranslate nohighlight">\(\cos(2\theta) = \cos^2 \theta - \sin^2 \theta\)</span></p></td>
+<td><p>Follows from the sum of angles identity with <span class="math notranslate nohighlight">\(\alpha = \beta = \theta\)</span></p></td>
+</tr>
+<tr class="row-odd"><td><p>Half angle identity</p></td>
+<td><p><span class="math notranslate nohighlight">\(\sin^2 \frac{\theta}{2} = \frac{1 - \cos \theta}{2}\)</span></p></td>
+<td><p>Follows from the double angle identity and the Pythagorean identity</p></td>
+</tr>
+<tr class="row-even"><td><p>Euler’s formula</p></td>
+<td><p><span class="math notranslate nohighlight">\(e^{i\theta} = \cos \theta + i \sin \theta\)</span></p></td>
+<td><p>Establishes the fundamental relationship between the complex exponential function and the trigonometric functions</p></td>
+</tr>
+<tr class="row-odd"><td><p>Euler’s identity</p></td>
+<td><p><span class="math notranslate nohighlight">\(e^{i\pi} + 1 = 0\)</span></p></td>
+<td><p>Follows from Euler’s formula with <span class="math notranslate nohighlight">\(\theta = \pi\)</span></p></td>
+</tr>
+<tr class="row-even"><td><p>Euler’s relation Non-Imaginary</p></td>
+<td><p><span class="math notranslate nohighlight">\(cosh = \frac{e^{\theta} + e^{-\theta}}{2}\)</span></p></td>
+<td><p>Definition of hyperbollic relation between trigonometry and Eulers formula</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="definition-list-and-abreviations">
+<h1>Definition list and abreviations<a class="headerlink" href="#definition-list-and-abreviations" title="Link to this heading">#</a></h1>
+<dl class="simple myst">
+<dt>UC</dt><dd><p>Unit Cell</p>
+</dd>
+<dt>EoS</dt><dd><p>Energy of states</p>
+</dd>
+</dl>
+</section>
+
+        </article>
+      </div>
+      <footer>
+        
+        <div class="related-pages">
+          
+          
+        </div>
+        <div class="bottom-of-page">
+          <div class="left-details">
+            <div class="copyright">
+                Copyright &#169; 2024, Jonas E. Svane
+            </div>
+            Made with <a href="https://www.sphinx-doc.org/">Sphinx</a> and <a class="muted-link" href="https://pradyunsg.me">@pradyunsg</a>'s
+            
+            <a href="https://github.com/pradyunsg/furo">Furo</a>
+            
+          </div>
+          <div class="right-details">
+            
+          </div>
+        </div>
+        
+      </footer>
+    </div>
+    <aside class="toc-drawer no-toc">
+      
+      
+      
+    </aside>
+  </div>
+</div><script src="../_static/documentation_options.js?v=2709fde1"></script>
+    <script src="../_static/doctools.js?v=888ff710"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/scripts/furo.js?v=32e29ea5"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    </body>
+</html>

@@ -1,0 +1,19 @@
+{
+    "myst.preview.extensions": [
+        "dollarmath",
+        "colon_fence",
+        "amsmath",
+        "deflist",
+        "tasklist",
+        "amsmath"
+    ],
+    "notebook.gotoSymbols.showAllSymbols": false,
+    "markdownlint.run": "onSave",
+    "markdown.extension.print.absoluteImgPath": false,
+    "markdown.extension.toc.updateOnSave": false,
+    "markdown.copyFiles.destination": {
+        "**/*": "/figures/${documentBaseName}/"
+    },
+    "myst.preview.enable": true,
+    "python.analysis.autoImportCompletions": false,
+}
