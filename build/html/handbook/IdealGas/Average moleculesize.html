@@ -3,7 +3,7 @@
   <head><meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width,initial-scale=1"/>
     <meta name="color-scheme" content="light dark"><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
-<link rel="index" title="Index" href="../../genindex.html" /><link rel="search" title="Search" href="../../search.html" />
+<link rel="index" title="Index" href="../../genindex.html" /><link rel="search" title="Search" href="../../search.html" /><link rel="next" title="Energy" href="Energies.html" /><link rel="prev" title="Single Einstein solid" href="../EinsteinSolids/SingleEinsteinSolid.html" />
 
     <!-- Generated with Sphinx 7.2.6 and Furo 2023.09.10 -->
         <title>Average molecule size - Handbook and guide: Statistical and Solid State Physics 0.1 documentation</title>
@@ -134,7 +134,7 @@
           <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
         </button>
       </div>
-      <label class="toc-overlay-icon toc-header-icon no-toc" for="__toc">
+      <label class="toc-overlay-icon toc-header-icon" for="__toc">
         <div class="visually-hidden">Toggle table of contents sidebar</div>
         <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
       </label>
@@ -155,7 +155,26 @@
 </form>
 <div id="searchbox"></div><div class="sidebar-scroll"><div class="sidebar-tree">
   <p class="caption" role="heading"><span class="caption-text">Table of Contents</span></p>
-<ul>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../Blackbody%20radiation/Blackbody.html">Blackbody radiation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../CyclicProcesses/PVdiagrams.html">PV diagram</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Effusion/Gasincontainer.html">Gas in a Container</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../EinsteinSolids/Energies.html">Energies of a system</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../EinsteinSolids/MultipleEinsteinSolids.html">Multiple Einstein Solids</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../EinsteinSolids/SingleEinsteinSolid.html">Single Einstein solid</a></li>
+<li class="toctree-l1 current current-page"><a class="current reference internal" href="#">Average molecule size</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Energies.html">Energy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Magnets/TwoStateParamagnet.html">Two State Paramagnet</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../PartitionFunction/Partitionfunctions.html">Partition &amp; Boltzmann’s Function</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../RawMath/Ensemble.html">Combinatorial Mathematics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../RawMath/Manipulation.html">Manipulation of natural expressions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Statphys_handbook.html">Statistical physics Handbook</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Statphys_handbook.html#table-of-contents">Table of Contents</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Statphys_handbook.html#solid-state-physics">Solid State Physics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Statphys_handbook.html#statistical-physics">Statistical Physics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Statphys_handbook.html#relevant-math">Relevant math</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Statphys_handbook.html#table-of-equations">Table of equations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Statphys_handbook.html#definition-list-and-abreviations">Definition list and abreviations</a></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../../apidocs/index.html">API Reference</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" role="switch" type="checkbox"/><label for="toctree-checkbox-1"><div class="visually-hidden">Toggle navigation of API Reference</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
 <li class="toctree-l2 has-children"><a class="reference internal" href="../../apidocs/SttPhscsPckg/SttPhscsPckg.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">SttPhscsPckg</span></code></a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" role="switch" type="checkbox"/><label for="toctree-checkbox-2"><div class="visually-hidden">Toggle navigation of SttPhscsPckg</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
 <li class="toctree-l3"><a class="reference internal" href="../../apidocs/SttPhscsPckg/SttPhscsPckg.class_test.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">SttPhscsPckg.class_test</span></code></a></li>
@@ -199,7 +218,7 @@
               <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
             </button>
           </div>
-          <label class="toc-overlay-icon toc-content-icon no-toc" for="__toc">
+          <label class="toc-overlay-icon toc-content-icon" for="__toc">
             <div class="visually-hidden">Toggle table of contents sidebar</div>
             <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
           </label>
@@ -224,6 +243,11 @@ The average size of a molecule can be found by rearanging the Ideal Gas law</p>
 </div>
 <p>This is hardly important but can give a better intuition as to why the ideal gas is
 not a bad approximation per se. F.x. a molecule of <span class="math notranslate nohighlight">\(H_2O\)</span> has a size of <span class="math notranslate nohighlight">\(0.958 \cdot 10^{-10} m\)</span> compared to the average size pr molecule which is just Eq.<a class="reference internal" href="#equation-1">(1)</a> taken by the cube root. <span class="math notranslate nohighlight">\(\left(\frac{V}{N}\right)^{1/3} = 3.45 \cdot 10^{-9} m\)</span>. From this it is clear that the average size of a molecule in an ideal gas is very insignificant.</p>
+<section id="average-velocity-from-maxwell">
+<span id="avrvelidgas"></span><h2>Average velocity from Maxwell<a class="headerlink" href="#average-velocity-from-maxwell" title="Link to this heading">#</a></h2>
+<p>Deriving the squared velocity, by approximating the maxwell sum as an integral.</p>
+<p><img alt="Alt text" src="figures/Average%20moleculesize/image.png" /></p>
+</section>
 </section>
 
         </article>
@@ -231,8 +255,26 @@ not a bad approximation per se. F.x. a molecule of <span class="math notranslate
       <footer>
         
         <div class="related-pages">
-          
-          
+          <a class="next-page" href="Energies.html">
+              <div class="page-info">
+                <div class="context">
+                  <span>Next</span>
+                </div>
+                <div class="title">Energy</div>
+              </div>
+              <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
+            </a>
+          <a class="prev-page" href="../EinsteinSolids/SingleEinsteinSolid.html">
+              <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
+              <div class="page-info">
+                <div class="context">
+                  <span>Previous</span>
+                </div>
+                
+                <div class="title">Single Einstein solid</div>
+                
+              </div>
+            </a>
         </div>
         <div class="bottom-of-page">
           <div class="left-details">
@@ -251,8 +293,27 @@ not a bad approximation per se. F.x. a molecule of <span class="math notranslate
         
       </footer>
     </div>
-    <aside class="toc-drawer no-toc">
+    <aside class="toc-drawer">
       
+      
+      <div class="toc-sticky toc-scroll">
+        <div class="toc-title-container">
+          <span class="toc-title">
+            On this page
+          </span>
+        </div>
+        <div class="toc-tree-container">
+          <div class="toc-tree">
+            <ul>
+<li><a class="reference internal" href="#">Average molecule size</a><ul>
+<li><a class="reference internal" href="#average-velocity-from-maxwell">Average velocity from Maxwell</a></li>
+</ul>
+</li>
+</ul>
+
+          </div>
+        </div>
+      </div>
       
       
     </aside>

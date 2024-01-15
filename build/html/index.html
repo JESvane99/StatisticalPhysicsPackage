@@ -3,7 +3,7 @@
   <head><meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width,initial-scale=1"/>
     <meta name="color-scheme" content="light dark"><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
-<link rel="index" title="Index" href="genindex.html" /><link rel="search" title="Search" href="search.html" /><link rel="next" title="PV diagram" href="handbook/CyclicProcesses/PVdiagrams.html" />
+<link rel="index" title="Index" href="genindex.html" /><link rel="search" title="Search" href="search.html" /><link rel="next" title="Blackbody radiation" href="handbook/Blackbody%20radiation/Blackbody.html" />
 
     <!-- Generated with Sphinx 7.2.6 and Furo 2023.09.10 -->
         <title>Handbook and guide: Statistical and Solid State Physics 0.1 documentation</title>
@@ -156,16 +156,24 @@
 <div id="searchbox"></div><div class="sidebar-scroll"><div class="sidebar-tree">
   <p class="caption" role="heading"><span class="caption-text">Table of Contents</span></p>
 <ul>
+<li class="toctree-l1"><a class="reference internal" href="handbook/Blackbody%20radiation/Blackbody.html">Blackbody radiation</a></li>
 <li class="toctree-l1"><a class="reference internal" href="handbook/CyclicProcesses/PVdiagrams.html">PV diagram</a></li>
 <li class="toctree-l1"><a class="reference internal" href="handbook/Effusion/Gasincontainer.html">Gas in a Container</a></li>
 <li class="toctree-l1"><a class="reference internal" href="handbook/EinsteinSolids/Energies.html">Energies of a system</a></li>
 <li class="toctree-l1"><a class="reference internal" href="handbook/EinsteinSolids/MultipleEinsteinSolids.html">Multiple Einstein Solids</a></li>
-<li class="toctree-l1"><a class="reference internal" href="handbook/EinsteinSolids/SingleEinsteinSolid.html">Single Einstein solid</a></li>
-<li class="toctree-l1"><a class="reference internal" href="handbook/IdealGas/Average%20moleculesize.html">Average molecule size</a></li>
+<li class="toctree-l1"><a class="reference internal" href="handbook/IdealGas/Averagemoleculesize.html">Average molecule size</a></li>
 <li class="toctree-l1"><a class="reference internal" href="handbook/IdealGas/Energies.html">Energy</a></li>
 <li class="toctree-l1"><a class="reference internal" href="handbook/Magnets/TwoStateParamagnet.html">Two State Paramagnet</a></li>
+<li class="toctree-l1"><a class="reference internal" href="handbook/PartitionFunction/Partitionfunctions.html">Partition &amp; Boltzmann’s Function</a></li>
 <li class="toctree-l1"><a class="reference internal" href="handbook/RawMath/Ensemble.html">Combinatorial Mathematics</a></li>
 <li class="toctree-l1"><a class="reference internal" href="handbook/RawMath/Manipulation.html">Manipulation of natural expressions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="handbook/Statphys_handbook.html">Statistical physics Handbook(Old version)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="handbook/Statphys_handbook.html#table-of-contents">Table of Contents</a></li>
+<li class="toctree-l1"><a class="reference internal" href="handbook/Statphys_handbook.html#solid-state-physics">Solid State Physics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="handbook/Statphys_handbook.html#statistical-physics">Statistical Physics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="handbook/Statphys_handbook.html#relevant-math">Relevant math</a></li>
+<li class="toctree-l1"><a class="reference internal" href="handbook/Statphys_handbook.html#table-of-equations">Table of equations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="handbook/Statphys_handbook.html#definition-list-and-abreviations">Definition list and abreviations</a></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="apidocs/index.html">API Reference</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" role="switch" type="checkbox"/><label for="toctree-checkbox-1"><div class="visually-hidden">Toggle navigation of API Reference</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
 <li class="toctree-l2 has-children"><a class="reference internal" href="apidocs/SttPhscsPckg/SttPhscsPckg.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">SttPhscsPckg</span></code></a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" role="switch" type="checkbox"/><label for="toctree-checkbox-2"><div class="visually-hidden">Toggle navigation of SttPhscsPckg</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
 <li class="toctree-l3"><a class="reference internal" href="apidocs/SttPhscsPckg/SttPhscsPckg.class_test.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">SttPhscsPckg.class_test</span></code></a></li>
@@ -232,180 +240,39 @@ This project is under active development, and should be used with care.</p>
 <div class="toctree-wrapper compound" id="toc">
 <p class="caption" role="heading"><span class="caption-text">Table of Contents</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="handbook/CyclicProcesses/PVdiagrams.html">PV diagram</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="handbook/CyclicProcesses/PVdiagrams.html#general-problem-solving">General problem solving</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="handbook/CyclicProcesses/PVdiagrams.html#very-simple-general-problem">Very simple general problem</a></li>
-<li class="toctree-l3"><a class="reference internal" href="handbook/CyclicProcesses/PVdiagrams.html#medium-gp">Medium <span class="xref myst">GP</span></a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="handbook/Effusion/Gasincontainer.html">Gas in a Container</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="handbook/Effusion/Gasincontainer.html#general-problem-solving">General problem solving</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="handbook/EinsteinSolids/Energies.html">Energies of a system</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="handbook/EinsteinSolids/Energies.html#entropy">Entropy</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="handbook/EinsteinSolids/MultipleEinsteinSolids.html">Multiple Einstein Solids</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="handbook/EinsteinSolids/MultipleEinsteinSolids.html#limit-of-q-ll-n">Limit of <span class="math notranslate nohighlight">\(q \ll N\)</span></a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="handbook/EinsteinSolids/SingleEinsteinSolid.html">Single Einstein solid</a></li>
-<li class="toctree-l1"><a class="reference internal" href="handbook/IdealGas/Average%20moleculesize.html">Average molecule size</a></li>
-<li class="toctree-l1"><a class="reference internal" href="handbook/IdealGas/Energies.html">Energy</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="handbook/IdealGas/Energies.html#entropy">Entropy</a></li>
-</ul>
-</li>
+<li class="toctree-l1"><a class="reference internal" href="handbook/Blackbody%20radiation/Blackbody.html">Blackbody radiation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="handbook/CyclicProcesses/PVdiagrams.html">PV diagram</a></li>
+<li class="toctree-l1"><a class="reference internal" href="handbook/Effusion/Gasincontainer.html">Gas in a Container</a></li>
+<li class="toctree-l1"><a class="reference internal" href="handbook/EinsteinSolids/Energies.html">Energies of a system</a></li>
+<li class="toctree-l1"><a class="reference internal" href="handbook/EinsteinSolids/MultipleEinsteinSolids.html">Multiple Einstein Solids</a></li>
+<li class="toctree-l1"><a class="reference internal" href="handbook/IdealGas/Averagemoleculesize.html">Average molecule size</a></li>
+<li class="toctree-l1"><a class="reference internal" href="handbook/IdealGas/Energies.html">Energy</a></li>
 <li class="toctree-l1"><a class="reference internal" href="handbook/Magnets/TwoStateParamagnet.html">Two State Paramagnet</a></li>
-<li class="toctree-l1"><a class="reference internal" href="handbook/RawMath/Ensemble.html">Combinatorial Mathematics</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="handbook/RawMath/Ensemble.html#binomial-coefficient">Binomial coefficient</a></li>
-<li class="toctree-l2"><a class="reference internal" href="handbook/RawMath/Ensemble.html#important-limits-in-ln-and-e-x">Important limits in <span class="math notranslate nohighlight">\(ln\)</span> and <span class="math notranslate nohighlight">\(e^x\)</span></a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="handbook/RawMath/Manipulation.html">Manipulation of natural expressions</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="handbook/RawMath/Manipulation.html#usefull-prewritten-examples">Usefull prewritten examples</a></li>
-</ul>
-</li>
+<li class="toctree-l1"><a class="reference internal" href="handbook/PartitionFunction/Partitionfunctions.html">Partition &amp; Boltzmann’s Function</a></li>
+<li class="toctree-l1"><a class="reference internal" href="handbook/RawMath/Ensemble.html">Combinatorial Mathematics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="handbook/RawMath/Manipulation.html">Manipulation of natural expressions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="handbook/Statphys_handbook.html">Statistical physics Handbook(Old version)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="handbook/Statphys_handbook.html#table-of-contents">Table of Contents</a></li>
+<li class="toctree-l1"><a class="reference internal" href="handbook/Statphys_handbook.html#solid-state-physics">Solid State Physics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="handbook/Statphys_handbook.html#statistical-physics">Statistical Physics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="handbook/Statphys_handbook.html#relevant-math">Relevant math</a></li>
+<li class="toctree-l1"><a class="reference internal" href="handbook/Statphys_handbook.html#table-of-equations">Table of equations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="handbook/Statphys_handbook.html#definition-list-and-abreviations">Definition list and abreviations</a></li>
 <li class="toctree-l1"><a class="reference internal" href="apidocs/index.html">API Reference</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="apidocs/SttPhscsPckg/SttPhscsPckg.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">SttPhscsPckg</span></code></a><ul>
-<li class="toctree-l3"><a class="reference internal" href="apidocs/SttPhscsPckg/SttPhscsPckg.html#submodules">Submodules</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="apidocs/SttPhscsPckg/SttPhscsPckg.class_test.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">SttPhscsPckg.class_test</span></code></a><ul>
-<li class="toctree-l5"><a class="reference internal" href="apidocs/SttPhscsPckg/SttPhscsPckg.class_test.html#module-contents">Module Contents</a><ul>
-<li class="toctree-l6"><a class="reference internal" href="apidocs/SttPhscsPckg/SttPhscsPckg.class_test.html#functions">Functions</a></li>
-<li class="toctree-l6"><a class="reference internal" href="apidocs/SttPhscsPckg/SttPhscsPckg.class_test.html#data">Data</a></li>
-<li class="toctree-l6"><a class="reference internal" href="apidocs/SttPhscsPckg/SttPhscsPckg.class_test.html#api">API</a><ul>
-<li class="toctree-l7"><a class="reference internal" href="apidocs/SttPhscsPckg/SttPhscsPckg.class_test.html#SttPhscsPckg.class_test.test"><code class="docutils literal notranslate"><span class="pre">test()</span></code></a></li>
-<li class="toctree-l7"><a class="reference internal" href="apidocs/SttPhscsPckg/SttPhscsPckg.class_test.html#SttPhscsPckg.class_test.get_random_ingredients"><code class="docutils literal notranslate"><span class="pre">get_random_ingredients()</span></code></a></li>
-<li class="toctree-l7"><a class="reference internal" href="apidocs/SttPhscsPckg/SttPhscsPckg.class_test.html#SttPhscsPckg.class_test.mylist"><code class="docutils literal notranslate"><span class="pre">mylist</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="apidocs/SttPhscsPckg/SttPhscsPckg.class_test.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">SttPhscsPckg.class_test</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="apidocs/SttPhscsPckg/SttPhscsPckg.EinsteinSolids.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">SttPhscsPckg.EinsteinSolids</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="apidocs/SttPhscsPckg/SttPhscsPckg.ideal_gas.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">SttPhscsPckg.ideal_gas</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="apidocs/SttPhscsPckg/SttPhscsPckg.MathCalc.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">SttPhscsPckg.MathCalc</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="apidocs/SttPhscsPckg/SttPhscsPckg.PartitionFunctions.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">SttPhscsPckg.PartitionFunctions</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="apidocs/SttPhscsPckg/SttPhscsPckg.pytFunktioner.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">SttPhscsPckg.pytFunktioner</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="apidocs/SttPhscsPckg/SttPhscsPckg.reciprocal_lattice_calc.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">SttPhscsPckg.reciprocal_lattice_calc</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="apidocs/SttPhscsPckg/SttPhscsPckg.SystemEntropy.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">SttPhscsPckg.SystemEntropy</span></code></a></li>
 </ul>
 </li>
 </ul>
 </li>
-</ul>
-</li>
-<li class="toctree-l4"><a class="reference internal" href="apidocs/SttPhscsPckg/SttPhscsPckg.EinsteinSolids.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">SttPhscsPckg.EinsteinSolids</span></code></a><ul>
-<li class="toctree-l5"><a class="reference internal" href="apidocs/SttPhscsPckg/SttPhscsPckg.EinsteinSolids.html#module-contents">Module Contents</a><ul>
-<li class="toctree-l6"><a class="reference internal" href="apidocs/SttPhscsPckg/SttPhscsPckg.EinsteinSolids.html#functions">Functions</a></li>
-<li class="toctree-l6"><a class="reference internal" href="apidocs/SttPhscsPckg/SttPhscsPckg.EinsteinSolids.html#api">API</a><ul>
-<li class="toctree-l7"><a class="reference internal" href="apidocs/SttPhscsPckg/SttPhscsPckg.EinsteinSolids.html#SttPhscsPckg.EinsteinSolids.multiplicity"><code class="docutils literal notranslate"><span class="pre">multiplicity()</span></code></a></li>
-<li class="toctree-l7"><a class="reference internal" href="apidocs/SttPhscsPckg/SttPhscsPckg.EinsteinSolids.html#SttPhscsPckg.EinsteinSolids.SolveDatSht"><code class="docutils literal notranslate"><span class="pre">SolveDatSht()</span></code></a></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="toctree-l4"><a class="reference internal" href="apidocs/SttPhscsPckg/SttPhscsPckg.ideal_gas.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">SttPhscsPckg.ideal_gas</span></code></a><ul>
-<li class="toctree-l5"><a class="reference internal" href="apidocs/SttPhscsPckg/SttPhscsPckg.ideal_gas.html#module-contents">Module Contents</a><ul>
-<li class="toctree-l6"><a class="reference internal" href="apidocs/SttPhscsPckg/SttPhscsPckg.ideal_gas.html#functions">Functions</a></li>
-<li class="toctree-l6"><a class="reference internal" href="apidocs/SttPhscsPckg/SttPhscsPckg.ideal_gas.html#data">Data</a></li>
-<li class="toctree-l6"><a class="reference internal" href="apidocs/SttPhscsPckg/SttPhscsPckg.ideal_gas.html#api">API</a><ul>
-<li class="toctree-l7"><a class="reference internal" href="apidocs/SttPhscsPckg/SttPhscsPckg.ideal_gas.html#SttPhscsPckg.ideal_gas.Room_T"><code class="docutils literal notranslate"><span class="pre">Room_T</span></code></a></li>
-<li class="toctree-l7"><a class="reference internal" href="apidocs/SttPhscsPckg/SttPhscsPckg.ideal_gas.html#SttPhscsPckg.ideal_gas.volume_id_gas"><code class="docutils literal notranslate"><span class="pre">volume_id_gas()</span></code></a></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="toctree-l4"><a class="reference internal" href="apidocs/SttPhscsPckg/SttPhscsPckg.MathCalc.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">SttPhscsPckg.MathCalc</span></code></a><ul>
-<li class="toctree-l5"><a class="reference internal" href="apidocs/SttPhscsPckg/SttPhscsPckg.MathCalc.html#module-contents">Module Contents</a><ul>
-<li class="toctree-l6"><a class="reference internal" href="apidocs/SttPhscsPckg/SttPhscsPckg.MathCalc.html#functions">Functions</a></li>
-<li class="toctree-l6"><a class="reference internal" href="apidocs/SttPhscsPckg/SttPhscsPckg.MathCalc.html#api">API</a><ul>
-<li class="toctree-l7"><a class="reference internal" href="apidocs/SttPhscsPckg/SttPhscsPckg.MathCalc.html#SttPhscsPckg.MathCalc.rand_distribution"><code class="docutils literal notranslate"><span class="pre">rand_distribution()</span></code></a></li>
-<li class="toctree-l7"><a class="reference internal" href="apidocs/SttPhscsPckg/SttPhscsPckg.MathCalc.html#SttPhscsPckg.MathCalc.stirling_app"><code class="docutils literal notranslate"><span class="pre">stirling_app()</span></code></a></li>
-<li class="toctree-l7"><a class="reference internal" href="apidocs/SttPhscsPckg/SttPhscsPckg.MathCalc.html#SttPhscsPckg.MathCalc.stirling_app_ln"><code class="docutils literal notranslate"><span class="pre">stirling_app_ln()</span></code></a></li>
-<li class="toctree-l7"><a class="reference internal" href="apidocs/SttPhscsPckg/SttPhscsPckg.MathCalc.html#SttPhscsPckg.MathCalc.two_state_microstates"><code class="docutils literal notranslate"><span class="pre">two_state_microstates()</span></code></a></li>
-<li class="toctree-l7"><a class="reference internal" href="apidocs/SttPhscsPckg/SttPhscsPckg.MathCalc.html#SttPhscsPckg.MathCalc.get_binom_info"><code class="docutils literal notranslate"><span class="pre">get_binom_info()</span></code></a></li>
-<li class="toctree-l7"><a class="reference internal" href="apidocs/SttPhscsPckg/SttPhscsPckg.MathCalc.html#SttPhscsPckg.MathCalc.two_einstein"><code class="docutils literal notranslate"><span class="pre">two_einstein()</span></code></a></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="toctree-l4"><a class="reference internal" href="apidocs/SttPhscsPckg/SttPhscsPckg.PartitionFunctions.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">SttPhscsPckg.PartitionFunctions</span></code></a><ul>
-<li class="toctree-l5"><a class="reference internal" href="apidocs/SttPhscsPckg/SttPhscsPckg.PartitionFunctions.html#module-contents">Module Contents</a><ul>
-<li class="toctree-l6"><a class="reference internal" href="apidocs/SttPhscsPckg/SttPhscsPckg.PartitionFunctions.html#functions">Functions</a></li>
-<li class="toctree-l6"><a class="reference internal" href="apidocs/SttPhscsPckg/SttPhscsPckg.PartitionFunctions.html#data">Data</a></li>
-<li class="toctree-l6"><a class="reference internal" href="apidocs/SttPhscsPckg/SttPhscsPckg.PartitionFunctions.html#api">API</a><ul>
-<li class="toctree-l7"><a class="reference internal" href="apidocs/SttPhscsPckg/SttPhscsPckg.PartitionFunctions.html#SttPhscsPckg.PartitionFunctions.n"><code class="docutils literal notranslate"><span class="pre">n</span></code></a></li>
-<li class="toctree-l7"><a class="reference internal" href="apidocs/SttPhscsPckg/SttPhscsPckg.PartitionFunctions.html#SttPhscsPckg.PartitionFunctions.U"><code class="docutils literal notranslate"><span class="pre">U</span></code></a></li>
-<li class="toctree-l7"><a class="reference internal" href="apidocs/SttPhscsPckg/SttPhscsPckg.PartitionFunctions.html#SttPhscsPckg.PartitionFunctions.T_therm_equil_resevoir"><code class="docutils literal notranslate"><span class="pre">T_therm_equil_resevoir()</span></code></a></li>
-<li class="toctree-l7"><a class="reference internal" href="apidocs/SttPhscsPckg/SttPhscsPckg.PartitionFunctions.html#SttPhscsPckg.PartitionFunctions.Frac_partition_funcs"><code class="docutils literal notranslate"><span class="pre">Frac_partition_funcs()</span></code></a></li>
-<li class="toctree-l7"><a class="reference internal" href="apidocs/SttPhscsPckg/SttPhscsPckg.PartitionFunctions.html#SttPhscsPckg.PartitionFunctions.PF_average_energy"><code class="docutils literal notranslate"><span class="pre">PF_average_energy()</span></code></a></li>
-<li class="toctree-l7"><a class="reference internal" href="apidocs/SttPhscsPckg/SttPhscsPckg.PartitionFunctions.html#SttPhscsPckg.PartitionFunctions.PF_heat_capacity"><code class="docutils literal notranslate"><span class="pre">PF_heat_capacity()</span></code></a></li>
-<li class="toctree-l7"><a class="reference internal" href="apidocs/SttPhscsPckg/SttPhscsPckg.PartitionFunctions.html#SttPhscsPckg.PartitionFunctions.PF_prob_of_one_state"><code class="docutils literal notranslate"><span class="pre">PF_prob_of_one_state()</span></code></a></li>
-<li class="toctree-l7"><a class="reference internal" href="apidocs/SttPhscsPckg/SttPhscsPckg.PartitionFunctions.html#SttPhscsPckg.PartitionFunctions.partition_func_template"><code class="docutils literal notranslate"><span class="pre">partition_func_template()</span></code></a></li>
-<li class="toctree-l7"><a class="reference internal" href="apidocs/SttPhscsPckg/SttPhscsPckg.PartitionFunctions.html#SttPhscsPckg.PartitionFunctions.symbolic_F_free_energy"><code class="docutils literal notranslate"><span class="pre">symbolic_F_free_energy()</span></code></a></li>
-<li class="toctree-l7"><a class="reference internal" href="apidocs/SttPhscsPckg/SttPhscsPckg.PartitionFunctions.html#SttPhscsPckg.PartitionFunctions.HFE"><code class="docutils literal notranslate"><span class="pre">HFE</span></code></a></li>
-<li class="toctree-l7"><a class="reference internal" href="apidocs/SttPhscsPckg/SttPhscsPckg.PartitionFunctions.html#SttPhscsPckg.PartitionFunctions.create_arrays"><code class="docutils literal notranslate"><span class="pre">create_arrays()</span></code></a></li>
-<li class="toctree-l7"><a class="reference internal" href="apidocs/SttPhscsPckg/SttPhscsPckg.PartitionFunctions.html#SttPhscsPckg.PartitionFunctions.energyMatrix"><code class="docutils literal notranslate"><span class="pre">energyMatrix()</span></code></a></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="toctree-l4"><a class="reference internal" href="apidocs/SttPhscsPckg/SttPhscsPckg.pytFunktioner.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">SttPhscsPckg.pytFunktioner</span></code></a><ul>
-<li class="toctree-l5"><a class="reference internal" href="apidocs/SttPhscsPckg/SttPhscsPckg.pytFunktioner.html#module-contents">Module Contents</a><ul>
-<li class="toctree-l6"><a class="reference internal" href="apidocs/SttPhscsPckg/SttPhscsPckg.pytFunktioner.html#functions">Functions</a></li>
-<li class="toctree-l6"><a class="reference internal" href="apidocs/SttPhscsPckg/SttPhscsPckg.pytFunktioner.html#api">API</a><ul>
-<li class="toctree-l7"><a class="reference internal" href="apidocs/SttPhscsPckg/SttPhscsPckg.pytFunktioner.html#SttPhscsPckg.pytFunktioner.ttest"><code class="docutils literal notranslate"><span class="pre">ttest()</span></code></a></li>
-<li class="toctree-l7"><a class="reference internal" href="apidocs/SttPhscsPckg/SttPhscsPckg.pytFunktioner.html#SttPhscsPckg.pytFunktioner.vartest2"><code class="docutils literal notranslate"><span class="pre">vartest2()</span></code></a></li>
-<li class="toctree-l7"><a class="reference internal" href="apidocs/SttPhscsPckg/SttPhscsPckg.pytFunktioner.html#SttPhscsPckg.pytFunktioner.ttest2"><code class="docutils literal notranslate"><span class="pre">ttest2()</span></code></a></li>
-<li class="toctree-l7"><a class="reference internal" href="apidocs/SttPhscsPckg/SttPhscsPckg.pytFunktioner.html#SttPhscsPckg.pytFunktioner.summaryML"><code class="docutils literal notranslate"><span class="pre">summaryML()</span></code></a></li>
-<li class="toctree-l7"><a class="reference internal" href="apidocs/SttPhscsPckg/SttPhscsPckg.pytFunktioner.html#SttPhscsPckg.pytFunktioner.inversReg"><code class="docutils literal notranslate"><span class="pre">inversReg()</span></code></a></li>
-<li class="toctree-l7"><a class="reference internal" href="apidocs/SttPhscsPckg/SttPhscsPckg.pytFunktioner.html#SttPhscsPckg.pytFunktioner.additivitetsPlot"><code class="docutils literal notranslate"><span class="pre">additivitetsPlot()</span></code></a></li>
-<li class="toctree-l7"><a class="reference internal" href="apidocs/SttPhscsPckg/SttPhscsPckg.pytFunktioner.html#SttPhscsPckg.pytFunktioner.bartlettGroup"><code class="docutils literal notranslate"><span class="pre">bartlettGroup()</span></code></a></li>
-<li class="toctree-l7"><a class="reference internal" href="apidocs/SttPhscsPckg/SttPhscsPckg.pytFunktioner.html#SttPhscsPckg.pytFunktioner.forward"><code class="docutils literal notranslate"><span class="pre">forward()</span></code></a></li>
-<li class="toctree-l7"><a class="reference internal" href="apidocs/SttPhscsPckg/SttPhscsPckg.pytFunktioner.html#SttPhscsPckg.pytFunktioner.cvForward"><code class="docutils literal notranslate"><span class="pre">cvForward()</span></code></a></li>
-<li class="toctree-l7"><a class="reference internal" href="apidocs/SttPhscsPckg/SttPhscsPckg.pytFunktioner.html#SttPhscsPckg.pytFunktioner.ridge"><code class="docutils literal notranslate"><span class="pre">ridge()</span></code></a></li>
-<li class="toctree-l7"><a class="reference internal" href="apidocs/SttPhscsPckg/SttPhscsPckg.pytFunktioner.html#SttPhscsPckg.pytFunktioner.cvRidge"><code class="docutils literal notranslate"><span class="pre">cvRidge()</span></code></a></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="toctree-l4"><a class="reference internal" href="apidocs/SttPhscsPckg/SttPhscsPckg.reciprocal_lattice_calc.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">SttPhscsPckg.reciprocal_lattice_calc</span></code></a><ul>
-<li class="toctree-l5"><a class="reference internal" href="apidocs/SttPhscsPckg/SttPhscsPckg.reciprocal_lattice_calc.html#module-contents">Module Contents</a><ul>
-<li class="toctree-l6"><a class="reference internal" href="apidocs/SttPhscsPckg/SttPhscsPckg.reciprocal_lattice_calc.html#functions">Functions</a></li>
-<li class="toctree-l6"><a class="reference internal" href="apidocs/SttPhscsPckg/SttPhscsPckg.reciprocal_lattice_calc.html#api">API</a><ul>
-<li class="toctree-l7"><a class="reference internal" href="apidocs/SttPhscsPckg/SttPhscsPckg.reciprocal_lattice_calc.html#SttPhscsPckg.reciprocal_lattice_calc.calc_rec_lat"><code class="docutils literal notranslate"><span class="pre">calc_rec_lat()</span></code></a></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="toctree-l4"><a class="reference internal" href="apidocs/SttPhscsPckg/SttPhscsPckg.SystemEntropy.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">SttPhscsPckg.SystemEntropy</span></code></a><ul>
-<li class="toctree-l5"><a class="reference internal" href="apidocs/SttPhscsPckg/SttPhscsPckg.SystemEntropy.html#module-contents">Module Contents</a><ul>
-<li class="toctree-l6"><a class="reference internal" href="apidocs/SttPhscsPckg/SttPhscsPckg.SystemEntropy.html#functions">Functions</a></li>
-<li class="toctree-l6"><a class="reference internal" href="apidocs/SttPhscsPckg/SttPhscsPckg.SystemEntropy.html#api">API</a><ul>
-<li class="toctree-l7"><a class="reference internal" href="apidocs/SttPhscsPckg/SttPhscsPckg.SystemEntropy.html#SttPhscsPckg.SystemEntropy.ES_entropy"><code class="docutils literal notranslate"><span class="pre">ES_entropy()</span></code></a></li>
-<li class="toctree-l7"><a class="reference internal" href="apidocs/SttPhscsPckg/SttPhscsPckg.SystemEntropy.html#SttPhscsPckg.SystemEntropy.ES_entropy_two"><code class="docutils literal notranslate"><span class="pre">ES_entropy_two()</span></code></a></li>
-<li class="toctree-l7"><a class="reference internal" href="apidocs/SttPhscsPckg/SttPhscsPckg.SystemEntropy.html#SttPhscsPckg.SystemEntropy.ES_energy_qNlim"><code class="docutils literal notranslate"><span class="pre">ES_energy_qNlim()</span></code></a></li>
-<li class="toctree-l7"><a class="reference internal" href="apidocs/SttPhscsPckg/SttPhscsPckg.SystemEntropy.html#SttPhscsPckg.SystemEntropy.ES_C_V_qNlim"><code class="docutils literal notranslate"><span class="pre">ES_C_V_qNlim()</span></code></a></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="usage.html">Usage</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="usage.html#installation">Installation</a></li>
-<li class="toctree-l2"><a class="reference internal" href="usage.html#glossary">Glossary</a></li>
-</ul>
-</li>
+<li class="toctree-l1"><a class="reference internal" href="usage.html">Usage</a></li>
 </ul>
 </div>
 </section>
@@ -423,12 +290,12 @@ This project is under active development, and should be used with care.</p>
       <footer>
         
         <div class="related-pages">
-          <a class="next-page" href="handbook/CyclicProcesses/PVdiagrams.html">
+          <a class="next-page" href="handbook/Blackbody%20radiation/Blackbody.html">
               <div class="page-info">
                 <div class="context">
                   <span>Next</span>
                 </div>
-                <div class="title">PV diagram</div>
+                <div class="title">Blackbody radiation</div>
               </div>
               <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
             </a>

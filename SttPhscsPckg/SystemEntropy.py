@@ -30,7 +30,8 @@ def ES_entropy_two(N):
 
     S_tot_bm = S_tot / k_bm
 
-    print(f"total entropy of the system: {S_tot}", "\n", f"Entropy in terms of Boltzmanns constant: {S_tot_bm}")
+    print(f"total entropy of the system: {S_tot}", "\n",
+          f"Entropy in terms of Boltzmanns constant: {S_tot_bm}")
 
 
 def ES_energy_qNlim(N, eps=1, T=298):
@@ -47,7 +48,8 @@ def ES_energy_qNlim(N, eps=1, T=298):
 
 
 def ES_C_V_qNlim(N, T=298, eps=1):
-    """Calculating the heat capacity of an Einstein solid in the limit of $q \ll N$
+    """Calculating the heat capacity of an Einstein solid
+    in the limit of $q \ll N$
     taken from AnswersC.pdf problem 3.8
 
     params:

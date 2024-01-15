@@ -29,11 +29,11 @@ Please do be carefull and have snacks and a blancket ready.
 ## Important limits in $ln$ and $e^x$
 
 ```{list-table}
+    - Problems
+*   - Answers
+    -![Alt text](/figures/Ensemble/image-1.png)
+*   -![Alt text](/figures/Ensemble/image-2.png)
 
-*   - Problems
-    - Answers
-*   -![Alt text](../../../figures/Ensemble/image-1.png)
-    -![Alt text](../../../figures/Ensemble/image-2.png)
 ```
 
 Apperently there is something called el hospitals rule... 

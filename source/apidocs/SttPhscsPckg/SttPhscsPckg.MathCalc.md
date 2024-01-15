@@ -35,10 +35,6 @@
   - ```{autodoc2-docstring} SttPhscsPckg.MathCalc.get_binom_info
     :summary:
     ```
-* - {py:obj}`two_einstein <SttPhscsPckg.MathCalc.two_einstein>`
-  - ```{autodoc2-docstring} SttPhscsPckg.MathCalc.two_einstein
-    :summary:
-    ```
 ````
 
 ### API
@@ -75,12 +71,5 @@
 :canonical: SttPhscsPckg.MathCalc.get_binom_info
 
 ```{autodoc2-docstring} SttPhscsPckg.MathCalc.get_binom_info
-```
-````
-
-````{py:function} two_einstein(units_of_e, oscillators)
-:canonical: SttPhscsPckg.MathCalc.two_einstein
-
-```{autodoc2-docstring} SttPhscsPckg.MathCalc.two_einstein
 ```
 ````

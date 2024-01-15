@@ -15,8 +15,7 @@ $$
 $$
 ```
 
-The module `[EinsteinSolids.py](/SttPhscsPckg/EinsteinSolids.py)`{l=python} prints out a nice answer for almost every possible numerical problem of einstein solids
-
+The module [EinsteinSolids.py](/SttPhscsPckg/EinsteinSolids.py) prints out a nice answer for almost every possible numerical problem of einstein solids
 
 - "An introduction to thermal physics" by Daniel Schröeder, pp. 74-77
 - AnswersC.pdf problem 2.30
@@ -27,6 +26,7 @@ The module `[EinsteinSolids.py](/SttPhscsPckg/EinsteinSolids.py)`{l=python} prin
 
 When finding a formula for the temperature of an Einstein solid refer to AnswersC.pdf
 problem 3.5 which also solves for the energy to give:
+
 $$U = N \epsilon \cdot e^{\frac{-\epsilon}{k T}}$$
 
 Calculating the heat capacity of an Einstein solid please refer to 'AnswersC.pdf'
@@ -46,3 +46,4 @@ $$
 A sketch of the heat capacity can look like this:
 
 ![Alt text](../figs/image-2.png)
+

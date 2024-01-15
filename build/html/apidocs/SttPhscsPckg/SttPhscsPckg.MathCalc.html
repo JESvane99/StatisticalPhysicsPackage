@@ -156,6 +156,25 @@
 <div id="searchbox"></div><div class="sidebar-scroll"><div class="sidebar-tree">
   <p class="caption" role="heading"><span class="caption-text">Table of Contents</span></p>
 <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../handbook/Blackbody%20radiation/Blackbody.html">Blackbody radiation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../handbook/CyclicProcesses/PVdiagrams.html">PV diagram</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../handbook/Effusion/Gasincontainer.html">Gas in a Container</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../handbook/EinsteinSolids/Energies.html">Energies of a system</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../handbook/EinsteinSolids/MultipleEinsteinSolids.html">Multiple Einstein Solids</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../handbook/EinsteinSolids/SingleEinsteinSolid.html">Single Einstein solid</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../handbook/IdealGas/Average%20moleculesize.html">Average molecule size</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../handbook/IdealGas/Energies.html">Energy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../handbook/Magnets/TwoStateParamagnet.html">Two State Paramagnet</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../handbook/PartitionFunction/Partitionfunctions.html">Partition &amp; Boltzmann’s Function</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../handbook/RawMath/Ensemble.html">Combinatorial Mathematics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../handbook/RawMath/Manipulation.html">Manipulation of natural expressions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../handbook/Statphys_handbook.html">Statistical physics Handbook</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../handbook/Statphys_handbook.html#table-of-contents">Table of Contents</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../handbook/Statphys_handbook.html#solid-state-physics">Solid State Physics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../handbook/Statphys_handbook.html#statistical-physics">Statistical Physics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../handbook/Statphys_handbook.html#relevant-math">Relevant math</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../handbook/Statphys_handbook.html#table-of-equations">Table of equations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../handbook/Statphys_handbook.html#definition-list-and-abreviations">Definition list and abreviations</a></li>
 <li class="toctree-l1 current has-children"><a class="reference internal" href="../index.html">API Reference</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" role="switch" type="checkbox"/><label for="toctree-checkbox-1"><div class="visually-hidden">Toggle navigation of API Reference</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul class="current">
 <li class="toctree-l2 current has-children"><a class="reference internal" href="SttPhscsPckg.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">SttPhscsPckg</span></code></a><input checked="" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" role="switch" type="checkbox"/><label for="toctree-checkbox-2"><div class="visually-hidden">Toggle navigation of SttPhscsPckg</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul class="current">
 <li class="toctree-l3"><a class="reference internal" href="SttPhscsPckg.class_test.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">SttPhscsPckg.class_test</span></code></a></li>
@@ -230,9 +249,6 @@
 <tr class="row-odd"><td><p><a class="reference internal" href="#SttPhscsPckg.MathCalc.get_binom_info" title="SttPhscsPckg.MathCalc.get_binom_info"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_binom_info</span></code></a></p></td>
 <td><p>creates Binomial object and then prints things of relevance</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#SttPhscsPckg.MathCalc.two_einstein" title="SttPhscsPckg.MathCalc.two_einstein"><code class="xref py py-obj docutils literal notranslate"><span class="pre">two_einstein</span></code></a></p></td>
-<td><p>Important stuff about two einstein solids that are identical</p></td>
-</tr>
 </tbody>
 </table>
 </div>
@@ -281,7 +297,7 @@ float with approximation of number of possible distributions</p>
 <dd><p>Number of microstates</p>
 <p>params:</p>
 <ul class="simple">
-<li><p>N: how many times one thing is tested. 1 coin 20 times or 20 coins 1 time.</p></li>
+<li><p>N: how many times one thing is tested. 1 coin 20 times or 20 coins 1 time</p></li>
 </ul>
 <p>return:
 float with microstates</p>
@@ -299,24 +315,6 @@ float with microstates</p>
 <p>returns:
 probability of a microstate
 probability of a macrostate</p>
-</dd></dl>
-
-<dl class="py function">
-<dt class="sig sig-object py" id="SttPhscsPckg.MathCalc.two_einstein">
-<span class="sig-prename descclassname"><span class="pre">SttPhscsPckg.MathCalc.</span></span><span class="sig-name descname"><span class="pre">two_einstein</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">units_of_e</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">oscillators</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#SttPhscsPckg.MathCalc.two_einstein" title="Link to this definition">#</a></dt>
-<dd><p>Important stuff about two einstein solids that are identical</p>
-<p>params:</p>
-<ul class="simple">
-<li><p>units_of_e: units of energy shared between the two systems</p></li>
-<li><p>oscillators: total number of oscillators in total system</p></li>
-</ul>
-<p>return:</p>
-<ul class="simple">
-<li><p>number of macrostates</p></li>
-<li><p>number of microstates</p></li>
-<li><p>probability of finding all energy in one solid</p></li>
-<li><p>probability of finding half energy in one solid</p></li>
-</ul>
 </dd></dl>
 
 </section>
@@ -387,7 +385,6 @@ probability of a macrostate</p>
 <li><a class="reference internal" href="#SttPhscsPckg.MathCalc.stirling_app_ln"><code class="docutils literal notranslate"><span class="pre">stirling_app_ln()</span></code></a></li>
 <li><a class="reference internal" href="#SttPhscsPckg.MathCalc.two_state_microstates"><code class="docutils literal notranslate"><span class="pre">two_state_microstates()</span></code></a></li>
 <li><a class="reference internal" href="#SttPhscsPckg.MathCalc.get_binom_info"><code class="docutils literal notranslate"><span class="pre">get_binom_info()</span></code></a></li>
-<li><a class="reference internal" href="#SttPhscsPckg.MathCalc.two_einstein"><code class="docutils literal notranslate"><span class="pre">two_einstein()</span></code></a></li>
 </ul>
 </li>
 </ul>

@@ -14,11 +14,10 @@ from IPython.display import display, Latex
 
 from scipy.constants import physical_constants
 
-
-h, f, beta, E0, E_s, k, T = sp.symbols("h f beta E0 E_s k T", real=True, positive=True)
-
+h, f, beta, E0, E_s, k, T = sp.symbols("h f beta E0 E_s k T",
+                                       real=True,
+                                       positive=True)
 n = sp.symbols("n", integer=True)
-
 U = sp.symbols("U", positive=True)
 
 
@@ -55,6 +54,9 @@ def Frac_partition_funcs(E_difference, T):
     params:
     - E_difference: energy difference between the two states.
     - T: temperature
+
+    Returns:
+    - Fraction of particles with higher energy.
     """
     Res_difference = np.exp(
         -E_difference / (physical_constants["Boltzmann constant"][0] * T)
@@ -92,6 +94,12 @@ def PF_average_energy(func, beta):
     returns:
     - Average energy for one particle
     """
+    h, f, beta, E0, E_s, k, T = sp.symbols(
+        "h f beta E0 E_s k T",
+        real=True,
+        positive=True
+    )
+
     myfunc = func
 
     res = -1 / myfunc * myfunc.diff(beta)
@@ -180,6 +188,11 @@ def PF_heat_capacity(partition_func, beta):
     returns:
     - heat capacity
     """
+    h, f, beta, E0, E_s, k, T = sp.symbols(
+        "h f beta E0 E_s k T",
+        real=True,
+        positive=True
+    )
     try:
         k, T, N = sp.symbols("k T N", positive=True)
 
@@ -217,6 +230,10 @@ def PF_heat_capacity(partition_func, beta):
 
 
 def PF_prob_of_one_state(func, energy=h * f, single_state=False):
+    """
+    Probability of one state being the one state
+    """
+
     if not single_state:
         boltfactor = sp.sum(sp.exp(-beta * energy), (n, 0, oo))
 
@@ -278,6 +295,16 @@ def partition_func_template(
 
 
 def symbolic_F_free_energy(num_particles=1, stirling_approx=True):
+    """
+    Function for writing up the free energy with or without the stirling approximation
+
+    Uses the partition_func_template
+
+    :param int num_particles: Number of different particles.
+    Turns it into alphabetical i.e. 1=a 2=3 and so on.
+
+    :param bool stirling_approx: decides wether or not the stirling approximation should be used.
+    """
     alphabet_of_part = [chr(i + 97) for i in range(num_particles)]
 
     z_list = sp.symbols(f"Z_a:{chr(num_particles+96)}")
@@ -311,7 +338,9 @@ def symbolic_F_free_energy(num_particles=1, stirling_approx=True):
     return F_tot
 
 
-HFE = symbolic_F_free_energy(3, stirling_approx=True)
+if __name__ == "__main__":
+    HFE = symbolic_F_free_energy(3, stirling_approx=False)
+    display(HFE)
 
 
 def create_arrays(r, k):
@@ -364,7 +393,11 @@ def create_arrays(r, k):
 
 
 def energyMatrix(
-    n: int = 1, m: int = 1, qntt_prtcls: int = 1, nrg_type=None, ret_all: bool = False
+    n: int = 1,
+    m: int = 1,
+    qntt_prtcls: int = 1,
+    nrg_type=None,
+    ret_all: bool = False
 ):
     """
     gives a matrix containing the different energies of a system
@@ -396,7 +429,7 @@ def energyMatrix(
         FMatrix = nrg_type * FMatrix
 
     display(
-        "This is from the function energyMatrix -------------------------------------"
+        "This is from the function energyMatrix --------------------"
     )
     print("Possible outcomes of particle positions: \n")
     display(Matrix(psbl_systts))

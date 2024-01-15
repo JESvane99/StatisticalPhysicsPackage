@@ -14,7 +14,8 @@ def calc_rec_lat(a1=[1, 1], a2=[1, 1], a3=""):
     Parameters:
     a1 (list): A list of floats representing the first lattice vector.
     a2 (list): A list of floats representing the second lattice vector.
-    a3 (list, optional): A list of floats representing the third lattice vector. Defaults to "".
+    a3 (list, optional): A list of floats representing the third lattice
+    vector. Defaults to "".
 
     Returns:
     tuple: A tuple of 3 lists representing the reciprocal lattice vectors.

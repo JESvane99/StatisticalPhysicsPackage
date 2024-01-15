@@ -16,7 +16,7 @@ Then create a table to keep everything nice
 ```{figure} ../../../figures/PVdiagrams/image.png
 :name: p133
 
-Answer to Problem 1.33 in schroeder{cite}`schroeder2000introduction`
+Answer to Problem 1.33 in schroeder
 ```
 
 ### Medium [GP](../../usage.md#Glossary)
@@ -26,11 +26,20 @@ When rotational degrees of freedom are active but vibrational modes are frozen o
 ```{figure} ../../../figures/PVdiagrams/image-1.png
 :name:
 
-Answer to problem 1.34 in Schröeder{cite}`schroeder2000introduction`
+Answer to problem 1.34 in Schroeder
 ```
 
-```{bibliography}
-:filter:docname in docnames
-```
+### PV diagrams
 
-[TOC]: /source/index.rst
+- "An introduction to thermal physics" by Daniel Schröeder, pp. 17-28
+- **"AnswersA.pdf" from weekly problems**
+
+When calculating different quantities such as Work done on the system refer to the.
+When determining the sign of the quantities refer to the following table:
+
+![Alt text][def5]
+
+![Alt text](../../../figures/PVdiagrams/image-2.png "grandfreeenergy")
+
+[TOC]: /source/index.md
+[def5]: ../figs/image-1.png

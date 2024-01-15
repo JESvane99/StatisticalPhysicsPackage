@@ -22,9 +22,9 @@ Contents
 :glob:
 :caption: Table of Contents
 :name: TOC
+:titlesonly:
 
-handbook/*.md
-handbook/**/*
+handbook/**
 apidocs/index
 usage
 ```

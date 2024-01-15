@@ -54,7 +54,7 @@ def two_state_microstates(N) -> float:
     Number of microstates
 
     params:
-    - N: how many times one thing is tested. 1 coin 20 times or 20 coins 1 time.
+    - N: how many times one thing is tested. 1 coin 20 times or 20 coins 1 time
 
     return:
     float with microstates
@@ -83,5 +83,3 @@ def get_binom_info(n, N) -> dict:
     print(f"Probability of a macrostate: {probmacroout}")
     print(f"Probability of a microstate: {probmicroout}")
     print(f"Number of microstates: {numofmicro}")
-
-

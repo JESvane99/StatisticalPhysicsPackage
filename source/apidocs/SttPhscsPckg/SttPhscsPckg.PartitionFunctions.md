@@ -53,47 +53,7 @@
     ```
 ````
 
-### Data
-
-````{list-table}
-:class: autosummary longtable
-:align: left
-
-* - {py:obj}`n <SttPhscsPckg.PartitionFunctions.n>`
-  - ```{autodoc2-docstring} SttPhscsPckg.PartitionFunctions.n
-    :summary:
-    ```
-* - {py:obj}`U <SttPhscsPckg.PartitionFunctions.U>`
-  - ```{autodoc2-docstring} SttPhscsPckg.PartitionFunctions.U
-    :summary:
-    ```
-* - {py:obj}`HFE <SttPhscsPckg.PartitionFunctions.HFE>`
-  - ```{autodoc2-docstring} SttPhscsPckg.PartitionFunctions.HFE
-    :summary:
-    ```
-````
-
 ### API
-
-````{py:data} n
-:canonical: SttPhscsPckg.PartitionFunctions.n
-:value: >
-   'symbols(...)'
-
-```{autodoc2-docstring} SttPhscsPckg.PartitionFunctions.n
-```
-
-````
-
-````{py:data} U
-:canonical: SttPhscsPckg.PartitionFunctions.U
-:value: >
-   'symbols(...)'
-
-```{autodoc2-docstring} SttPhscsPckg.PartitionFunctions.U
-```
-
-````
 
 ````{py:function} T_therm_equil_resevoir(Delta_Energy, total_num)
 :canonical: SttPhscsPckg.PartitionFunctions.T_therm_equil_resevoir
@@ -142,16 +102,6 @@
 
 ```{autodoc2-docstring} SttPhscsPckg.PartitionFunctions.symbolic_F_free_energy
 ```
-````
-
-````{py:data} HFE
-:canonical: SttPhscsPckg.PartitionFunctions.HFE
-:value: >
-   'symbolic_F_free_energy(...)'
-
-```{autodoc2-docstring} SttPhscsPckg.PartitionFunctions.HFE
-```
-
 ````
 
 ````{py:function} create_arrays(r, k)

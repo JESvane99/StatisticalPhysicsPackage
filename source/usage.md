@@ -10,8 +10,8 @@ use the following functions to generate something:
 (Glossary)=
 ## Glossary
 
-{glossary}
+{.glossary}
 GP
 : general problem
 
-[PackageParent]: ../../StatisticalPhysicsPackage
+[PackageParent]: /

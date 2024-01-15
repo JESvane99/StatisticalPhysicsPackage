@@ -3,7 +3,7 @@
   <head><meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width,initial-scale=1"/>
     <meta name="color-scheme" content="light dark"><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
-<link rel="index" title="Index" href="../../genindex.html" /><link rel="search" title="Search" href="../../search.html" />
+<link rel="index" title="Index" href="../../genindex.html" /><link rel="search" title="Search" href="../../search.html" /><link rel="next" title="Partition &amp; Boltzmann’s Function" href="../PartitionFunction/Partitionfunctions.html" /><link rel="prev" title="Energy" href="../IdealGas/Energies.html" />
 
     <!-- Generated with Sphinx 7.2.6 and Furo 2023.09.10 -->
         <title>Two State Paramagnet - Handbook and guide: Statistical and Solid State Physics 0.1 documentation</title>
@@ -134,7 +134,7 @@
           <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
         </button>
       </div>
-      <label class="toc-overlay-icon toc-header-icon no-toc" for="__toc">
+      <label class="toc-overlay-icon toc-header-icon" for="__toc">
         <div class="visually-hidden">Toggle table of contents sidebar</div>
         <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
       </label>
@@ -155,7 +155,25 @@
 </form>
 <div id="searchbox"></div><div class="sidebar-scroll"><div class="sidebar-tree">
   <p class="caption" role="heading"><span class="caption-text">Table of Contents</span></p>
-<ul>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../Blackbody%20radiation/Blackbody.html">Blackbody radiation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../CyclicProcesses/PVdiagrams.html">PV diagram</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Effusion/Gasincontainer.html">Gas in a Container</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../EinsteinSolids/Energies.html">Energies of a system</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../EinsteinSolids/MultipleEinsteinSolids.html">Multiple Einstein Solids</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../IdealGas/Averagemoleculesize.html">Average molecule size</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../IdealGas/Energies.html">Energy</a></li>
+<li class="toctree-l1 current current-page"><a class="current reference internal" href="#">Two State Paramagnet</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../PartitionFunction/Partitionfunctions.html">Partition &amp; Boltzmann’s Function</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../RawMath/Ensemble.html">Combinatorial Mathematics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../RawMath/Manipulation.html">Manipulation of natural expressions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Statphys_handbook.html">Statistical physics Handbook(Old version)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Statphys_handbook.html#table-of-contents">Table of Contents</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Statphys_handbook.html#solid-state-physics">Solid State Physics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Statphys_handbook.html#statistical-physics">Statistical Physics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Statphys_handbook.html#relevant-math">Relevant math</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Statphys_handbook.html#table-of-equations">Table of equations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Statphys_handbook.html#definition-list-and-abreviations">Definition list and abreviations</a></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../../apidocs/index.html">API Reference</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" role="switch" type="checkbox"/><label for="toctree-checkbox-1"><div class="visually-hidden">Toggle navigation of API Reference</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
 <li class="toctree-l2 has-children"><a class="reference internal" href="../../apidocs/SttPhscsPckg/SttPhscsPckg.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">SttPhscsPckg</span></code></a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" role="switch" type="checkbox"/><label for="toctree-checkbox-2"><div class="visually-hidden">Toggle navigation of SttPhscsPckg</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
 <li class="toctree-l3"><a class="reference internal" href="../../apidocs/SttPhscsPckg/SttPhscsPckg.class_test.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">SttPhscsPckg.class_test</span></code></a></li>
@@ -199,17 +217,53 @@
               <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
             </button>
           </div>
-          <label class="toc-overlay-icon toc-content-icon no-toc" for="__toc">
+          <label class="toc-overlay-icon toc-content-icon" for="__toc">
             <div class="visually-hidden">Toggle table of contents sidebar</div>
             <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
           </label>
         </div>
         <article role="main">
-          <p><a class="reference internal" href="#/source/index.rst"><span class="xref myst">HOME</span></a></p>
+          
+<style>
+  .ss-layout-default-A_B_C { grid-template-areas: 'A' 'B' 'C'; }
+</style>
+<p><a class="reference internal" href="#/source/index.rst"><span class="xref myst">HOME</span></a></p>
 <section class="tex2jax_ignore mathjax_ignore" id="two-state-paramagnet">
 <span id="twostateparamagnet"></span><h1>Two State Paramagnet<a class="headerlink" href="#two-state-paramagnet" title="Link to this heading">#</a></h1>
 <p>The height of any function is just its value at a specific point.</p>
 <p>When have a system where the multiplicity function is very sharply peaked about <span class="math notranslate nohighlight">\(N_{\arrowup} = N/2\)</span> folow this:</p>
+<figure class="align-default" id="prblslvntwsttprrmgnt">
+<img alt="../../_images/image1.png" src="../../_images/image1.png" />
+<figcaption>
+<p><span class="caption-text"><img alt="Alt text" src="../../_images/image1.png" /></span><a class="headerlink" href="#prblslvntwsttprrmgnt" title="Link to this image">#</a></p>
+<div class="legend">
+<p><img alt="Alt text" src="../../_images/image-13.png" /></p>
+<p><img alt="Alt text" src="../../_images/image-21.png" /></p>
+<p><img alt="Alt text" src="../../_images/image-3.png" /></p>
+</div>
+</figcaption>
+</figure>
+<section id="entropy-two-state-paramagnet">
+<span id="twsttdrvt-entropy"></span><h2>Entropy - Two state Paramagnet<a class="headerlink" href="#entropy-two-state-paramagnet" title="Link to this heading">#</a></h2>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Full dereveation of Entropy as
+a function of Temperature. Derived from <span class="math notranslate nohighlight">\(\frac{S}{k}\)</span></p>
+</div>
+<figure class="sphinx-subfigure align-default">
+<div class="sphinx-subfigure-grid ss-layout-default-A_B_C" style="display: grid;">
+<div class="sphinx-subfigure-area" style="display: flex; flex-direction: column; justify-content: center; align-items: center; grid-area: A;">
+<img alt="Alt text" src="../../_images/image-42.png" />
+</div>
+<div class="sphinx-subfigure-area" style="display: flex; flex-direction: column; justify-content: center; align-items: center; grid-area: B;">
+<img alt="Alt text" src="../../_images/image-52.png" />
+</div>
+<div class="sphinx-subfigure-area" style="display: flex; flex-direction: column; justify-content: center; align-items: center; grid-area: C;">
+<img alt="Alt text" src="../../_images/image-62.png" />
+</div>
+</div>
+</figure>
+</section>
 </section>
 
         </article>
@@ -217,8 +271,26 @@
       <footer>
         
         <div class="related-pages">
-          
-          
+          <a class="next-page" href="../PartitionFunction/Partitionfunctions.html">
+              <div class="page-info">
+                <div class="context">
+                  <span>Next</span>
+                </div>
+                <div class="title">Partition &amp; Boltzmann’s Function</div>
+              </div>
+              <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
+            </a>
+          <a class="prev-page" href="../IdealGas/Energies.html">
+              <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
+              <div class="page-info">
+                <div class="context">
+                  <span>Previous</span>
+                </div>
+                
+                <div class="title">Energy</div>
+                
+              </div>
+            </a>
         </div>
         <div class="bottom-of-page">
           <div class="left-details">
@@ -237,8 +309,27 @@
         
       </footer>
     </div>
-    <aside class="toc-drawer no-toc">
+    <aside class="toc-drawer">
       
+      
+      <div class="toc-sticky toc-scroll">
+        <div class="toc-title-container">
+          <span class="toc-title">
+            On this page
+          </span>
+        </div>
+        <div class="toc-tree-container">
+          <div class="toc-tree">
+            <ul>
+<li><a class="reference internal" href="#">Two State Paramagnet</a><ul>
+<li><a class="reference internal" href="#entropy-two-state-paramagnet">Entropy - Two state Paramagnet</a></li>
+</ul>
+</li>
+</ul>
+
+          </div>
+        </div>
+      </div>
       
       
     </aside>
