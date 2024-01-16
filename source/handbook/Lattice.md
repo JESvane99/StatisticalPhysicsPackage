@@ -1,0 +1,16 @@
+#Lattice Theory
+
+## Brillouin zone
+
+:::{tip}
+When drawing a zone draw the points halfway between neighboring points and then connect them
+:::
+
+Please refer to [Solid State Physics][solidstatephysics] for theory behind reciprocal space and brillouin zones.
+
+:::{note}
+The book is depicting the math, for info about how to draw. just read
+:::
+
+
+[solidstatephysics]: ../../courseMaterial/Solid%20State%20Physics%20-%20Philip%20Hofmann.pdf

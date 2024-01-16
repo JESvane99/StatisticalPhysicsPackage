@@ -21,7 +21,7 @@ def multiplicity(n, q):
         math.factorial(q) * math.factorial(n - 1)
     )
     return multiplicity
-
+print(multiplicity(1,10))
 
 def SolveDatSht(na=650, nb=350, q=200, get_qaqboaob_all=False):
     """
@@ -206,4 +206,4 @@ def SolveDatSht(na=650, nb=350, q=200, get_qaqboaob_all=False):
 
 
 if __name__ == "__main__":
-    SolveDatSht(10,10,20,True)
+    SolveDatSht(1,1,10)
