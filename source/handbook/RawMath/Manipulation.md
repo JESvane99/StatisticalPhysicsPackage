@@ -6,7 +6,7 @@
 (manipulexp)=
 ## Usefull prewritten examples
 
-:::{subfigures}
+:::{subfigure}
 :subcaptions: below
 
 ![](../../../figures/Manipulation/image.png)

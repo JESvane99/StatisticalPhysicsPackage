@@ -3,7 +3,7 @@
   <head><meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width,initial-scale=1"/>
     <meta name="color-scheme" content="light dark"><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
-<link rel="index" title="Index" href="../../genindex.html" /><link rel="search" title="Search" href="../../search.html" /><link rel="next" title="SttPhscsPckg.pytFunktioner" href="SttPhscsPckg.pytFunktioner.html" /><link rel="prev" title="SttPhscsPckg.MathCalc" href="SttPhscsPckg.MathCalc.html" />
+<link rel="index" title="Index" href="../../genindex.html" /><link rel="search" title="Search" href="../../search.html" /><link rel="next" title="SttPhscsPckg.ProblemCalcs" href="SttPhscsPckg.ProblemCalcs.html" /><link rel="prev" title="SttPhscsPckg.MathCalc" href="SttPhscsPckg.MathCalc.html" />
 
     <!-- Generated with Sphinx 7.2.6 and Furo 2023.09.10 -->
         <title>SttPhscsPckg.PartitionFunctions - Handbook and guide: Statistical and Solid State Physics 0.1 documentation</title>
@@ -161,14 +161,15 @@
 <li class="toctree-l1"><a class="reference internal" href="../../handbook/Effusion/Gasincontainer.html">Gas in a Container</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../handbook/EinsteinSolids/Energies.html">Energies of a system</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../handbook/EinsteinSolids/MultipleEinsteinSolids.html">Multiple Einstein Solids</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../handbook/EinsteinSolids/SingleEinsteinSolid.html">Single Einstein solid</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../handbook/IdealGas/Average%20moleculesize.html">Average molecule size</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../handbook/IdealGas/Averagemoleculesize.html">Average molecule size</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../handbook/IdealGas/Energies.html">Energy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../handbook/Lattice.html">Brillouin zone</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../handbook/Magnets/TwoStateParamagnet.html">Two State Paramagnet</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../handbook/PartitionFunction/Partitionfunctions.html">Partition &amp; Boltzmann’s Function</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../handbook/Problemreference/ReferenceToProblems.html">Reference</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../handbook/RawMath/Ensemble.html">Combinatorial Mathematics</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../handbook/RawMath/Manipulation.html">Manipulation of natural expressions</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../handbook/Statphys_handbook.html">Statistical physics Handbook</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../handbook/Statphys_handbook.html">Statistical physics Handbook(Old version)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../handbook/Statphys_handbook.html#table-of-contents">Table of Contents</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../handbook/Statphys_handbook.html#solid-state-physics">Solid State Physics</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../handbook/Statphys_handbook.html#statistical-physics">Statistical Physics</a></li>
@@ -182,6 +183,7 @@
 <li class="toctree-l3"><a class="reference internal" href="SttPhscsPckg.ideal_gas.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">SttPhscsPckg.ideal_gas</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="SttPhscsPckg.MathCalc.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">SttPhscsPckg.MathCalc</span></code></a></li>
 <li class="toctree-l3 current current-page"><a class="current reference internal" href="#"><code class="xref py py-mod docutils literal notranslate"><span class="pre">SttPhscsPckg.PartitionFunctions</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="SttPhscsPckg.ProblemCalcs.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">SttPhscsPckg.ProblemCalcs</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="SttPhscsPckg.pytFunktioner.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">SttPhscsPckg.pytFunktioner</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="SttPhscsPckg.reciprocal_lattice_calc.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">SttPhscsPckg.reciprocal_lattice_calc</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="SttPhscsPckg.SystemEntropy.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">SttPhscsPckg.SystemEntropy</span></code></a></li>
@@ -262,7 +264,7 @@ vs lower energy state particles</p></td>
 <td><p>Gives a partition function as an expanded sum.</p></td>
 </tr>
 <tr class="row-odd"><td><p><a class="reference internal" href="#SttPhscsPckg.PartitionFunctions.symbolic_F_free_energy" title="SttPhscsPckg.PartitionFunctions.symbolic_F_free_energy"><code class="xref py py-obj docutils literal notranslate"><span class="pre">symbolic_F_free_energy</span></code></a></p></td>
-<td></td>
+<td><p>Function for writing up the free energy with or without the stirling approximation</p></td>
 </tr>
 <tr class="row-even"><td><p><a class="reference internal" href="#SttPhscsPckg.PartitionFunctions.create_arrays" title="SttPhscsPckg.PartitionFunctions.create_arrays"><code class="xref py py-obj docutils literal notranslate"><span class="pre">create_arrays</span></code></a></p></td>
 <td><p>Returns an array with following properties:</p></td>
@@ -274,8 +276,35 @@ vs lower energy state particles</p></td>
 </table>
 </div>
 </section>
+<section id="data">
+<h3>Data<a class="headerlink" href="#data" title="Link to this heading">#</a></h3>
+<div class="table-wrapper autosummary longtable docutils container">
+<table class="autosummary longtable docutils align-left">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#SttPhscsPckg.PartitionFunctions.n" title="SttPhscsPckg.PartitionFunctions.n"><code class="xref py py-obj docutils literal notranslate"><span class="pre">n</span></code></a></p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#SttPhscsPckg.PartitionFunctions.U" title="SttPhscsPckg.PartitionFunctions.U"><code class="xref py py-obj docutils literal notranslate"><span class="pre">U</span></code></a></p></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
 <section id="api">
 <h3>API<a class="headerlink" href="#api" title="Link to this heading">#</a></h3>
+<dl class="py data">
+<dt class="sig sig-object py" id="SttPhscsPckg.PartitionFunctions.n">
+<span class="sig-prename descclassname"><span class="pre">SttPhscsPckg.PartitionFunctions.</span></span><span class="sig-name descname"><span class="pre">n</span></span><a class="headerlink" href="#SttPhscsPckg.PartitionFunctions.n" title="Link to this definition">#</a></dt>
+<dd><p>‘symbols(…)’</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="SttPhscsPckg.PartitionFunctions.U">
+<span class="sig-prename descclassname"><span class="pre">SttPhscsPckg.PartitionFunctions.</span></span><span class="sig-name descname"><span class="pre">U</span></span><a class="headerlink" href="#SttPhscsPckg.PartitionFunctions.U" title="Link to this definition">#</a></dt>
+<dd><p>‘symbols(…)’</p>
+</dd></dl>
+
 <dl class="py function">
 <dt class="sig sig-object py" id="SttPhscsPckg.PartitionFunctions.T_therm_equil_resevoir">
 <span class="sig-prename descclassname"><span class="pre">SttPhscsPckg.PartitionFunctions.</span></span><span class="sig-name descname"><span class="pre">T_therm_equil_resevoir</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">Delta_Energy</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">total_num</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#SttPhscsPckg.PartitionFunctions.T_therm_equil_resevoir" title="Link to this definition">#</a></dt>
@@ -370,7 +399,18 @@ m: number of different energy states</p>
 <dl class="py function">
 <dt class="sig sig-object py" id="SttPhscsPckg.PartitionFunctions.symbolic_F_free_energy">
 <span class="sig-prename descclassname"><span class="pre">SttPhscsPckg.PartitionFunctions.</span></span><span class="sig-name descname"><span class="pre">symbolic_F_free_energy</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">num_particles</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">stirling_approx</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#SttPhscsPckg.PartitionFunctions.symbolic_F_free_energy" title="Link to this definition">#</a></dt>
-<dd></dd></dl>
+<dd><p>Function for writing up the free energy with or without the stirling approximation</p>
+<p>Uses the partition_func_template</p>
+<dl class="myst field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>num_particles</strong> (<em>int</em>) – Number of different particles.
+Turns it into alphabetical i.e. 1=a 2=3 and so on.</p></li>
+<li><p><strong>stirling_approx</strong> (<em>bool</em>) – decides wether or not the stirling approximation should be used.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="SttPhscsPckg.PartitionFunctions.create_arrays">
@@ -407,12 +447,12 @@ are distinguishable or not. Defualt: True</p>
       <footer>
         
         <div class="related-pages">
-          <a class="next-page" href="SttPhscsPckg.pytFunktioner.html">
+          <a class="next-page" href="SttPhscsPckg.ProblemCalcs.html">
               <div class="page-info">
                 <div class="context">
                   <span>Next</span>
                 </div>
-                <div class="title"><code class="xref py py-mod docutils literal notranslate"><span class="pre">SttPhscsPckg.pytFunktioner</span></code></div>
+                <div class="title"><code class="xref py py-mod docutils literal notranslate"><span class="pre">SttPhscsPckg.ProblemCalcs</span></code></div>
               </div>
               <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
             </a>
@@ -460,7 +500,10 @@ are distinguishable or not. Defualt: True</p>
 <li><a class="reference internal" href="#"><code class="xref py py-mod docutils literal notranslate"><span class="pre">SttPhscsPckg.PartitionFunctions</span></code></a><ul>
 <li><a class="reference internal" href="#module-contents">Module Contents</a><ul>
 <li><a class="reference internal" href="#functions">Functions</a></li>
+<li><a class="reference internal" href="#data">Data</a></li>
 <li><a class="reference internal" href="#api">API</a><ul>
+<li><a class="reference internal" href="#SttPhscsPckg.PartitionFunctions.n"><code class="docutils literal notranslate"><span class="pre">n</span></code></a></li>
+<li><a class="reference internal" href="#SttPhscsPckg.PartitionFunctions.U"><code class="docutils literal notranslate"><span class="pre">U</span></code></a></li>
 <li><a class="reference internal" href="#SttPhscsPckg.PartitionFunctions.T_therm_equil_resevoir"><code class="docutils literal notranslate"><span class="pre">T_therm_equil_resevoir()</span></code></a></li>
 <li><a class="reference internal" href="#SttPhscsPckg.PartitionFunctions.Frac_partition_funcs"><code class="docutils literal notranslate"><span class="pre">Frac_partition_funcs()</span></code></a></li>
 <li><a class="reference internal" href="#SttPhscsPckg.PartitionFunctions.PF_average_energy"><code class="docutils literal notranslate"><span class="pre">PF_average_energy()</span></code></a></li>

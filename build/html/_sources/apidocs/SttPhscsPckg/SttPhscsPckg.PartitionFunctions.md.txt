@@ -53,7 +53,43 @@
     ```
 ````
 
+### Data
+
+````{list-table}
+:class: autosummary longtable
+:align: left
+
+* - {py:obj}`n <SttPhscsPckg.PartitionFunctions.n>`
+  - ```{autodoc2-docstring} SttPhscsPckg.PartitionFunctions.n
+    :summary:
+    ```
+* - {py:obj}`U <SttPhscsPckg.PartitionFunctions.U>`
+  - ```{autodoc2-docstring} SttPhscsPckg.PartitionFunctions.U
+    :summary:
+    ```
+````
+
 ### API
+
+````{py:data} n
+:canonical: SttPhscsPckg.PartitionFunctions.n
+:value: >
+   'symbols(...)'
+
+```{autodoc2-docstring} SttPhscsPckg.PartitionFunctions.n
+```
+
+````
+
+````{py:data} U
+:canonical: SttPhscsPckg.PartitionFunctions.U
+:value: >
+   'symbols(...)'
+
+```{autodoc2-docstring} SttPhscsPckg.PartitionFunctions.U
+```
+
+````
 
 ````{py:function} T_therm_equil_resevoir(Delta_Energy, total_num)
 :canonical: SttPhscsPckg.PartitionFunctions.T_therm_equil_resevoir

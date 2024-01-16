@@ -18,6 +18,7 @@ SttPhscsPckg.EinsteinSolids
 SttPhscsPckg.ideal_gas
 SttPhscsPckg.MathCalc
 SttPhscsPckg.PartitionFunctions
+SttPhscsPckg.ProblemCalcs
 SttPhscsPckg.pytFunktioner
 SttPhscsPckg.reciprocal_lattice_calc
 SttPhscsPckg.SystemEntropy
