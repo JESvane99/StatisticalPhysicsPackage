@@ -110,9 +110,9 @@ def PF_average_energy(func, beta):
 
     N = sp.symbols("N")
 
-    E_tot = N * res
+    # E_tot = N * res
 
-    display(Latex("The total energy for N particles is:"), E_tot)
+    # display(Latex("The total energy for N particles is:"), E_tot)
 
     res2 = sp.log(myfunc)
 
@@ -123,42 +123,43 @@ def PF_average_energy(func, beta):
     if not compare:
         raise "derivatives do not compare"
 
-    res = res.subs(beta, 1 / (k * T))
 
     try:
-        T_toinf = sp.limit(res, T, sp.oo)
+        T_toinf = sp.limit(res, beta, sp.oo)
 
-        T_tonot = sp.limit(res, T, 0)
-
-        print("----------------------------------------------------------------")
-
-        display(Latex("Evaluation of heat capacity at $T \Rightarrow 0$"), T_tonot)
+        T_tonot = sp.limit(res, beta, 0)
 
         print("----------------------------------------------------------------")
 
-        display(Latex("Evaluation of heat capacity at $T \Rightarrow \infin$"), T_toinf)
+        display(Latex("Evaluation of average energy at $beta \Rightarrow 0$"), T_tonot)
+
+        print("----------------------------------------------------------------")
+
+        display(Latex("Evaluation of average energy at $beta \Rightarrow \infin$"), T_toinf)
 
     except Exception:  # noqa: E722
         try:
             res = res.expand()
 
-            T_toinf = res.limit(T, sp.oo)
+            T_toinf = res.limit(beta, sp.oo)
 
             display(
-                Latex("Evaluation of heat capacity at $T \Rightarrow \infin$"), T_toinf
+                Latex("Evaluation of average energy at $ beta \Rightarrow \infin$"), T_toinf
             )
             print("")
-            print("Could not evaluate for T->0\n" "use this to do it yourself:")
+            print("Could not evaluate for beta->0\n" "use this to do it yourself:")
 
         except Exception:  # noqa: E722
             try:
                 res = res.expand()
 
-                T_tonot = res.limit(T, 0)
+                T_tonot = res.limit(beta, 0)
 
                 display(
-                    Latex("Evaluation of heat capacity at $T \Rightarrow 0$"), T_tonot
+                    Latex("Evaluation of average energy at $beta \Rightarrow 0$"), T_tonot
                 )
+                print("")
+                print("Could not evaluate for beta->infinity\n" "use this expansion of the avereage energy to do it yourself:")
 
             except Exception:  # noqa: E722
                 print("tried to evaluate at extreme temperatures......")

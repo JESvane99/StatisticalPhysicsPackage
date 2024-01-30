@@ -5,7 +5,7 @@ rather bad attempts at calculating reciprocal lattice vectors
 """
 
 import numpy as np
-
+import sympy as sp
 
 def calc_rec_lat(a1=[1, 1], a2=[1, 1], a3=""):
     """
@@ -25,16 +25,22 @@ def calc_rec_lat(a1=[1, 1], a2=[1, 1], a3=""):
         cross23 = np.cross(real[1], real[2])
         cross13 = np.cross(real[0], real[2])
         cross12 = np.cross(real[0], real[1])
-        b1 = 2 * np.pi * cross23 / np.dot(real[0], cross23)
-        b2 = 2 * np.pi * cross13 / np.dot(real[1], cross13)
-        b3 = 2 * np.pi * cross12 / np.dot(real[2], cross12)
+        b1 = 2 * sp.pi * cross23 / np.dot(real[0], cross23)
+        b2 = 2 * sp.pi * cross13 / np.dot(real[1], cross13)
+        b3 = 2 * sp.pi * cross12 / np.dot(real[2], cross12)
 
         return b1, b2, b3
     else:
         real = np.array([a1, a2])
         Q = np.array([[0, -1], [1, 0]])
 
-        b1 = 2 * np.pi * np.dot(Q, real[1]) / (np.dot(real[0], np.dot(Q, real[1])))
-        b2 = 2 * np.pi * np.dot(Q, real[0]) / (np.dot(real[1], np.dot(Q, real[0])))
+        b1 = 2 * sp.pi * np.dot(Q, real[1]) / (np.dot(real[0], np.dot(Q, real[1])))
+        b2 = 2 * sp.pi * np.dot(Q, real[0]) / (np.dot(real[1], np.dot(Q, real[0])))
 
         return b1, b2
+
+a, sig = sp.symbols('a,sigma',positive=True)
+
+res = calc_rec_lat([a, a/2], [0, a])
+
+print(res)
